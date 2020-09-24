@@ -58,7 +58,7 @@ class CfgAmmo
     	caliber=1;
     	typicalSpeed= 500;
     };
-    class MGVE_Ammo_300_Tracer_IR: rhs_ammo_556x45_M855A1_Ball_Red
+    class MGVE_Ammo_300_TracerIR: rhs_ammo_556x45_M855A1_Ball_Red
 	{
     	airFriction = -0.001;
     	hit=6;
@@ -76,7 +76,7 @@ class CfgMagazines
 	class rhsusf_200rnd_556x45_m855_soft_pouch_coyote;
 
 	//PMAG
-    class MGVE_Mag_300_PMAG_Normal: rhs_mag_30rnd_556x45_m855a1_pmag 
+    class MGVE_Mag_30_300_PMAG_Normal: rhs_mag_30rnd_556x45_m855a1_pmag 
 	{
         author = "Sawtes";
         displayName = "30Rnd PMAG";
@@ -86,7 +86,7 @@ class CfgMagazines
         displayNameShort = ".300 Blackout";
         descriptionShort = "The .300 AAC Blackout was designed to give the AR platform extra umph in terms of power and penetration on intermediate ranges with reduce recoil while holding the 30 round mag.";
     };
-    class MGVE_Mag_300_PMAG_Tracer: rhs_mag_30rnd_556x45_m855a1_pmag 
+    class MGVE_Mag_30_300_PMAG_Tracer: rhs_mag_30rnd_556x45_m855a1_pmag 
 	{
         author = "Sawtes";
         displayName = "30Rnd PMAG (Tracer)";
@@ -96,28 +96,28 @@ class CfgMagazines
         displayNameShort = ".300 Blackout";
         descriptionShort = "The .300 AAC Blackout was designed to give the AR platform extra umph in terms of power and penetration on intermediate ranges with reduce recoil while holding the 30 round mag.";
     };
-    class MGVE_Mag_300_PMAG_Tracer3: rhs_mag_30rnd_556x45_m855a1_pmag 
+    class MGVE_Mag_30_300_PMAG_Tracer3: rhs_mag_30rnd_556x45_m855a1_pmag 
 	{
         author = "Sawtes";
-        displayName = "30Rnd PMAG (Tracer TE3)";
+        displayName = "30Rnd PMAG (Tracer every 3)";
         ammo = "MGVE_Ammo_300_Tracer";
         mass=12;
 		tracersEvery=3;
         displayNameShort = ".300 Blackout";
         descriptionShort = "The .300 AAC Blackout was designed to give the AR platform extra umph in terms of power and penetration on intermediate ranges with reduce recoil while holding the 30 round mag.";
     };
-    class MGVE_Mag_300_PMAG_Tracer_IR: rhs_mag_30rnd_556x45_m855a1_pmag 
+    class MGVE_Mag_30_300_PMAG_TracerIR: rhs_mag_30rnd_556x45_m855a1_pmag 
 	{
         author = "Sawtes";
         displayName = "30Rnd PMAG (Tracer IR)";
-        ammo = "MGVE_Ammo_300_Tracer_IR";
+        ammo = "MGVE_Ammo_300_TracerIR";
         mass=12;
 		tracersEvery=1;
         displayNameShort = ".300 Blackout";
         descriptionShort = "The .300 AAC Blackout was designed to give the AR platform extra umph in terms of power and penetration on intermediate ranges with reduce recoil while holding the 30 round mag.";
     };
 	//STANAG
-    class MGVE_Mag_300_Stanag_Normal: rhs_mag_30rnd_556x45_m855a1_stanag 
+    class MGVE_Mag_30_300_Stanag_Normal: rhs_mag_30rnd_556x45_m855a1_stanag 
 	{
         author = "Sawtes";
         displayName = "30Rnd Stanag";
@@ -127,7 +127,7 @@ class CfgMagazines
         displayNameShort = ".300 Blackout";
         descriptionShort = "The .300 AAC Blackout was designed to give the AR platform extra umph in terms of power and penetration on intermediate ranges with reduce recoil while holding the 30 round mag.";
     };
-    class MGVE_Mag_300_Stanag_Tracer: rhs_mag_30rnd_556x45_m855a1_stanag 
+    class MGVE_Mag_30_300_Stanag_Tracer: rhs_mag_30rnd_556x45_m855a1_stanag 
 	{
         author = "Sawtes";
         displayName = "30Rnd Stanag (Tracer)";
@@ -137,29 +137,29 @@ class CfgMagazines
         displayNameShort = ".300 Blackout";
         descriptionShort = "The .300 AAC Blackout was designed to give the AR platform extra umph in terms of power and penetration on intermediate ranges with reduce recoil while holding the 30 round mag.";
     };
-    class MGVE_Mag_300_Stanag_Tracer3: rhs_mag_30rnd_556x45_m855a1_stanag 
+    class MGVE_Mag_30_300_Stanag_Tracer3: rhs_mag_30rnd_556x45_m855a1_stanag 
 	{
         author = "Sawtes";
-        displayName = "30Rnd Stanag (Tracer TE3)";
+        displayName = "30Rnd Stanag (Tracer every 3)";
         ammo = "MGVE_Ammo_300_Tracer";
         mass=12;
 		tracersEvery=3;
         displayNameShort = ".300 Blackout";
         descriptionShort = "The .300 AAC Blackout was designed to give the AR platform extra umph in terms of power and penetration on intermediate ranges with reduce recoil while holding the 30 round mag.";
     };
-    class MGVE_Mag_300_Stanag_Tracer_IR: rhs_mag_30rnd_556x45_m855a1_stanag 
+    class MGVE_Mag_30_300_Stanag_TracerIR: rhs_mag_30rnd_556x45_m855a1_stanag 
 	{
         author = "Sawtes";
         displayName = "30Rnd Stanag (Tracer IR)";
-        ammo = "MGVE_Ammo_300_Tracer_IR";
+        ammo = "MGVE_Ammo_300_TracerIR";
         mass=12;
 		tracersEvery=1;
         displayNameShort = ".300 Blackout";
         descriptionShort = "The .300 AAC Blackout was designed to give the AR platform extra umph in terms of power and penetration on intermediate ranges with reduce recoil while holding the 30 round mag.";
     };
     
-	//COYOTE
-    class MGVE_Mag_300_SoftPack_Normal: rhsusf_100rnd_556x45_m200_soft_pouch_coyote 
+	//SOFTPACKS
+    class MGVE_Mag_100_300_SoftPack_Normal: rhsusf_100rnd_556x45_m200_soft_pouch_coyote 
 	{
         author = "Sawtes";
         displayName = "100Rnd Soft Pack";
@@ -169,7 +169,7 @@ class CfgMagazines
         displayNameShort = ".300 Blackout";
         descriptionShort = "The .300 AAC Blackout was designed to give the AR platform extra umph in terms of power and penetration on intermediate ranges with reduce recoil while holding the 30 round mag.";
     };
-    class MGVE_Mag_300_SoftPack_Tracer: rhsusf_100rnd_556x45_m200_soft_pouch_coyote 
+    class MGVE_Mag_100_300_SoftPack_Tracer: rhsusf_100rnd_556x45_m200_soft_pouch_coyote 
 	{
         author = "Sawtes";
         displayName = "100Rnd Soft Pack (Tracer)";
@@ -179,7 +179,7 @@ class CfgMagazines
         displayNameShort = ".300 Blackout";
         descriptionShort = "The .300 AAC Blackout was designed to give the AR platform extra umph in terms of power and penetration on intermediate ranges with reduce recoil while holding the 30 round mag.";
     };
-    class MGVE_Mag_300_SoftPack_Tracer3: rhsusf_100rnd_556x45_m200_soft_pouch_coyote 
+    class MGVE_Mag_100_300_SoftPack_Tracer3: rhsusf_100rnd_556x45_m200_soft_pouch_coyote 
 	{
         author = "Sawtes";
         displayName = "100Rnd Soft Pack (Tracer TE3)";
@@ -189,11 +189,11 @@ class CfgMagazines
         displayNameShort = ".300 Blackout";
         descriptionShort = "The .300 AAC Blackout was designed to give the AR platform extra umph in terms of power and penetration on intermediate ranges with reduce recoil while holding the 30 round mag.";
     };
-    class MGVE_Mag_300_SoftPack_Tracer_IR: rhsusf_100rnd_556x45_m200_soft_pouch_coyote 
+    class MGVE_Mag_100_300_SoftPack_TracerIR: rhsusf_100rnd_556x45_m200_soft_pouch_coyote 
 	{
         author = "Sawtes";
         displayName = "100Rnd Soft Pack (Tracer IR)";
-        ammo = "MGVE_Ammo_300_Tracer_IR";
+        ammo = "MGVE_Ammo_300_TracerIR";
         mass=35;
 		tracersEvery=1;
         displayNameShort = ".300 Blackout";
@@ -201,7 +201,7 @@ class CfgMagazines
     };
     
 	//SOFT POUCH COYOTE
-    class MGVE_Mag_300_SoftPack_200_Normal: rhsusf_200rnd_556x45_m855_soft_pouch_coyote 
+    class MGVE_Mag_200_300_SoftPack_Normal: rhsusf_200rnd_556x45_m855_soft_pouch_coyote 
 	{
         author = "Sawtes";
         displayName = "200Rnd Soft Pack";
@@ -211,7 +211,7 @@ class CfgMagazines
         displayNameShort = ".300 Blackout";
         descriptionShort = "The .300 AAC Blackout was designed to give the AR platform extra umph in terms of power and penetration on intermediate ranges with reduce recoil while holding the 30 round mag.";
     };
-    class MGVE_Mag_300_SoftPack_200_Tracer: rhsusf_200rnd_556x45_m855_soft_pouch_coyote 
+    class MGVE_Mag_200_300_SoftPack_Tracer: rhsusf_200rnd_556x45_m855_soft_pouch_coyote 
 	{
         author = "Sawtes";
         displayName = "200Rnd Soft Pack (Tracer)";
@@ -221,7 +221,7 @@ class CfgMagazines
         displayNameShort = ".300 Blackout";
         descriptionShort = "The .300 AAC Blackout was designed to give the AR platform extra umph in terms of power and penetration on intermediate ranges with reduce recoil while holding the 30 round mag.";
     };
-    class MGVE_Mag_300_SoftPack_200_Tracer3: rhsusf_200rnd_556x45_m855_soft_pouch_coyote 
+    class MGVE_Mag_200_300_SoftPack_Tracer3: rhsusf_200rnd_556x45_m855_soft_pouch_coyote 
 	{
         author = "Sawtes";
         displayName = "200Rnd Soft Pack (Tracer TE3)";
@@ -231,11 +231,11 @@ class CfgMagazines
         displayNameShort = ".300 Blackout";
         descriptionShort = "The .300 AAC Blackout was designed to give the AR platform extra umph in terms of power and penetration on intermediate ranges with reduce recoil while holding the 30 round mag.";
     };
-    class MGVE_Mag_300_SoftPack_200_Tracer_IR: rhsusf_200rnd_556x45_m855_soft_pouch_coyote 
+    class MGVE_Mag_200_300_SoftPack_TracerIR: rhsusf_200rnd_556x45_m855_soft_pouch_coyote 
 	{
         author = "Sawtes";
         displayName = "200Rnd Soft Pack (Tracer IR)";
-        ammo = "MGVE_Ammo_300_Tracer_IR";
+        ammo = "MGVE_Ammo_300_TracerIR";
         mass=72;
 		tracersEvery=1;
         displayNameShort = ".300 Blackout";
@@ -249,28 +249,28 @@ class CfgMagazineWells
 	{
 		MGVE_Magazines[]=
 		{
-			"MGVE_Mag_300_PMAG_Tracer3",
-			"MGVE_Mag_300_Stanag_Normal",
-			"MGVE_Mag_300_Stanag_Tracer3",
-			"MGVE_Mag_300_Stanag_Tracer",
-			"MGVE_Mag_300_Stanag_Tracer_IR",
-			"MGVE_Mag_300_PMAG_Tracer",
-			"MGVE_Mag_300_PMAG_Normal",
-			"MGVE_Mag_300_PMAG_Tracer_IR",
+            "MGVE_Mag_30_300_PMAG_Normal",
+            "MGVE_Mag_30_300_PMAG_Tracer",
+			"MGVE_Mag_30_300_PMAG_Tracer3",
+            "MGVE_Mag_30_300_PMAG_TracerIR",
+			"MGVE_Mag_30_300_Stanag_Normal",
+			"MGVE_Mag_30_300_Stanag_Tracer3",
+			"MGVE_Mag_30_300_Stanag_Tracer",
+			"MGVE_Mag_30_300_Stanag_TracerIR",
 		};
 	};
 	class CBA_300_Blackout_XL
 	{
 		MGVE_Magazines[]=
 		{
-			"MGVE_Mag_300_SoftPack_Normal",
-			"MGVE_Mag_300_SoftPack_Tracer",
-			"MGVE_Mag_300_SoftPack_Tracer3",
-			"MGVE_Mag_300_SoftPack_Tracer_IR",
-			"MGVE_Mag_300_SoftPack_200_Tracer3",
-			"MGVE_Mag_300_SoftPack_200_Tracer",
-			"MGVE_Mag_300_SoftPack_200_Tracer_IR",
-			"MGVE_Mag_300_SoftPack_200_Normal",
+			"MGVE_Mag_100_300_SoftPack_Normal",
+			"MGVE_Mag_100_300_SoftPack_Tracer",
+			"MGVE_Mag_100_300_SoftPack_Tracer3",
+			"MGVE_Mag_100_300_SoftPack_TracerIR",
+            "MGVE_Mag_200_300_SoftPack_Normal",
+            "MGVE_Mag_200_300_SoftPack_Tracer",
+			"MGVE_Mag_200_300_SoftPack_Tracer3",
+			"MGVE_Mag_200_300_SoftPack_TracerIR",
 		};
 	};
 };
