@@ -18,13 +18,14 @@ As of 9-22-2020, this mod adds
 - Class names are prefixed by *MGVE_* to prevent identical class names to other mods
 - Class names will be camel cased
 - Underscores will be used to seperate tags, details or other characteristics of that class. For example, a veteran gun belonging to the member "Fax" will be named `MGVE_VG_Fax`
-| Item Type | Class name convention |
-| :--- | :--- |
-| Veteran Gun 		| MGVE_VG_MemberName_[WeaponName] |
-| Veteran Launcher 	| MGVE_VL_MemberName_[WeaponName] |
-| Veteran Clothing 	| MGVE_VC_MemberName_[ClothingType] |
-| Ammo configs 		| MGVE_Ammo_Caliber_[Type]* |
-| Magazine configs	| MGVE_Mag_Capacity_Caliber_[Type]* |
+
+| Item Type        | Class Name Convention             |
+|------------------|-----------------------------------|
+| Veteran Gun      | MGVE_VG_MemberName_[WeaponName]   |
+| Veteran Launcher | MGVE_VL_MemberName_[WeaponName]   |
+| Veteran Clothing | MGVE_VC_MemberName_[ClothingType] |
+| Ammo Configs     | MGVE_Ammo_Caliber_[Type]*         |
+| Magazine Configs | MGVE_Mag_Capacity_Caliber_[Type]* |
 
 ## Add-ons
 - `MGVE_Core` defines the Mod_Base, ammunition, magazines, and mag-well configurations
