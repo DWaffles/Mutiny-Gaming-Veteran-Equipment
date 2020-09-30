@@ -16,7 +16,6 @@ class CfgPatches
 class cfgWeapons 
 { 
 	/** CLOTHING **/
-	//headwear
 	class H_Beret_02; 	// A3/Characters_F
 	class H_Cap_blk;	// A3/Characters_F	
 	

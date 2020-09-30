@@ -1,7 +1,7 @@
 #include "BIS_AddonInfo.hpp"
 class CfgPatches 
 { 
-    class MGVE_VeteranGuns
+    class MGVE_VeteranEquipment
     { 
 		units[]={};
 		weapons[]=
@@ -15,6 +15,7 @@ class CfgPatches
 			"MGVE_VG_Garrett",
 			"MGVE_VG_Gooby",
 			"MGVE_VG_Hue",
+			"MGVE_VG_Jeff",
 			"MGVE_VG_Luke",
 			"MGVE_VG_Marius",
 			"MGVE_VG_Maxca",
@@ -42,6 +43,7 @@ class cfgWeapons
 	class CUP_arifle_AK47_GL_top_rail;
 	class CUP_arifle_AKM_top_rail;
 	class CUP_arifle_Colt727;
+	class CUP_srifle_M110_black;
 	class CUP_arifle_FNFAL5060_railed;
 	class CUP_arifle_G36K_KSK_VFG;
 	class CUP_arifle_G3A3_ris_vfg_black;
@@ -73,8 +75,8 @@ class cfgWeapons
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[]=
 		{
-			"\MGVE_VeteranGuns\data\Banjo\Banjo_scar_h_body.paa",
-			"\MGVE_VeteranGuns\data\Banjo\Banjo_scar_acc.paa"
+			"\MGVE_VeteranEquipment\data\Banjo\Banjo_scar_h_body.paa",
+			"\MGVE_VeteranEquipment\data\Banjo\Banjo_scar_acc.paa"
 		};
 	};
 	class MGVE_VG_Blax: rhs_weap_ak74m
@@ -82,10 +84,10 @@ class cfgWeapons
 		scope=2;
 		baseWeapon = "MGVE_VG_Blax";
 		displayName="[MG] AK-74M (Blax)";
-		picture = "\MGVE_VeteranGuns\data\Blax\akadidasicon.paa";
+		picture = "\MGVE_VeteranEquipment\data\Blax\akadidasicon.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"\MGVE_VeteranGuns\data\Blax\akadidas.paa"
+			"\MGVE_VeteranEquipment\data\Blax\akadidas.paa"
 		};
 	};
 	class MGVE_VG_Candles: CUP_arifle_FNFAL5060_railed
@@ -95,8 +97,8 @@ class cfgWeapons
 		displayName="[MG] FAL 50.00 (Candles)";
 		hiddenSelectionsTextures[]=
 		{
-			"\MGVE_VeteranGuns\data\Candles\candles_fnfal_body_co.paa",
-			"\MGVE_VeteranGuns\data\Candles\candles_fnfal_stock_co.paa",
+			"\MGVE_VeteranEquipment\data\Candles\candles_fnfal_body_co.paa",
+			"\MGVE_VeteranEquipment\data\Candles\candles_fnfal_stock_co.paa",
 			"CUP\Weapons\CUP_Weapons_FNFAL\data\fnfal_sight_fnc_co.paa"
 		};
 	};
@@ -108,11 +110,11 @@ class cfgWeapons
 		hiddenSelections[] = {"body","newfront","zenit1","zenit2","zenit3"};
 		hiddenSelectionsTextures[] =
 		{
-			"\MGVE_VeteranGuns\data\Devil\akdevil.paa",
+			"\MGVE_VeteranEquipment\data\Devil\akdevil.paa",
 			"rhsafrf\addons\rhs_weapons\texture\ak105_barrel_co.paa",
-			"\MGVE_VeteranGuns\data\Devil\rhs_zenitko_01_co.paa",
-			"\MGVE_VeteranGuns\data\Devil\rhs_zenitko_02_co.paa",
-			"\MGVE_VeteranGuns\data\Devil\rhs_b33_co.paa"
+			"\MGVE_VeteranEquipment\data\Devil\rhs_zenitko_01_co.paa",
+			"\MGVE_VeteranEquipment\data\Devil\rhs_zenitko_02_co.paa",
+			"\MGVE_VeteranEquipment\data\Devil\rhs_b33_co.paa"
 		};
 	};
 	class MGVE_VG_Didicoal: rhs_weap_m240B
@@ -123,8 +125,8 @@ class cfgWeapons
 		hiddenSelections[] = {"camo1","camo2","camo3"};
 		hiddenSelectionsTextures[] =
 		{
-		"\MGVE_VeteranGuns\data\Didicoal\m240b_2k_co.paa",
-		"\MGVE_VeteranGuns\data\Didicoal\m240b_2k_co.paa",
+		"\MGVE_VeteranEquipment\data\Didicoal\m240b_2k_co.paa",
+		"\MGVE_VeteranEquipment\data\Didicoal\m240b_2k_co.paa",
 		"\rhsusf\addons\rhsusf_weapons2\m240\data\m240_co.paa"
 		};
 	};
@@ -144,10 +146,10 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\MGVE_VeteranGuns\data\Faz\gfaz0.paa",
-			"\MGVE_VeteranGuns\data\Faz\gfaz1.paa",
-			"\MGVE_VeteranGuns\data\Faz\gfaz2.paa",
-			"\MGVE_VeteranGuns\data\Faz\gfaz3.paa",
+			"\MGVE_VeteranEquipment\data\Faz\gfaz0.paa",
+			"\MGVE_VeteranEquipment\data\Faz\gfaz1.paa",
+			"\MGVE_VeteranEquipment\data\Faz\gfaz2.paa",
+			"\MGVE_VeteranEquipment\data\Faz\gfaz3.paa",
 			"CUP\Weapons\CUP_Weapons_AK\Data\gp25_sight_co.paa"
 		};
 		magazines[]=
@@ -178,7 +180,7 @@ class cfgWeapons
         baseWeapon = "MGVE_VG_Garrett";
         displayName = "[MG] Mk 18 Mod 1 (Garrett)";
         hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"\MGVE_VeteranGuns\data\Garrett\gaygarret.paa"};
+        hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Garrett\gaygarret.paa"};
     };
 	class MGVE_VG_Gooby: CUP_arifle_Colt727
 	{
@@ -193,8 +195,8 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\MGVE_VeteranGuns\data\Gooby\ggoob.paa",
-			"\MGVE_VeteranGuns\data\Gooby\ggoob1.paa",
+			"\MGVE_VeteranEquipment\data\Gooby\ggoob.paa",
+			"\MGVE_VeteranEquipment\data\Gooby\ggoob1.paa",
 			"cup\weapons\cup_weapons_m16\data\tigg_m4barrel_co.paa"
 		};
 	};
@@ -212,11 +214,24 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\MGVE_VeteranGuns\data\Hue\body_co.paa",
-			"\MGVE_VeteranGuns\data\Hue\body2_co.paa",
-			"\MGVE_VeteranGuns\data\Hue\fore_co.paa",
-			"\MGVE_VeteranGuns\data\Hue\fore_co.paa"
+			"\MGVE_VeteranEquipment\data\Hue\body_co.paa",
+			"\MGVE_VeteranEquipment\data\Hue\body2_co.paa",
+			"\MGVE_VeteranEquipment\data\Hue\fore_co.paa",
+			"\MGVE_VeteranEquipment\data\Hue\fore_co.paa"
 		};
+	};
+	class MGVE_VG_Jeff: CUP_srifle_M110_black
+	{
+		scope = 2;
+		baseWeapon = "MGVE_VG_Jeff";
+		displayName = "[MG] M110 PRS (Heff)";
+		hiddenSelectionsTextures[]=
+    	{
+			"\MGVE_VeteranEquipment\data\Jeff\Jeff_m110_reciever_co.paa",
+			"\MGVE_VeteranEquipment\data\Jeff\Jeff_m110_stock_co.paa",
+			"cup\weapons\cup_weapons_weaponsdata\data\ris_cover\rail_cover_co.paa",
+			"cup\weapons\cup_weapons_weaponsdata\data\magpul_afg_grip\magpul_afg_co.paa"
+    	};
 	};
 	class MGVE_VG_Luke: CUP_arifle_ACRC_blk_556
 	{
@@ -224,7 +239,7 @@ class cfgWeapons
 	  	displayName="[MG] ACR-C .300 (Luke)";
 	  	hiddenSelectionsTextures[]=
   		{
-    		"\MGVE_VeteranGuns\data\Luke\Luke_acr_black_co.paa"
+    		"\MGVE_VeteranEquipment\data\Luke\Luke_acr_black_co.paa"
   		};
   		magazines[]=
 		{
@@ -242,7 +257,7 @@ class cfgWeapons
 		displayName = "[MG] M14 (Marius)";
 		hiddenSelectionsTextures[] = 
 		{
-			"\MGVE_VeteranGuns\Data\Marius\mg_m14_marius_co.paa",
+			"\MGVE_VeteranEquipment\Data\Marius\mg_m14_marius_co.paa",
 		};
 	};
 	class MGVE_VG_Maxca: CUP_arifle_mk18_black
@@ -251,7 +266,7 @@ class cfgWeapons
         baseWeapon = "MGVE_VG_Maxca";
         displayName = "[MG] Mk 18 Mod 1 (Maxca)";
         hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"\MGVE_VeteranGuns\data\Maxca\gmax.paa"};
+        hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Maxca\gmax.paa"};
     };
 	class MGVE_VG_Priscilla: CUP_arifle_RPK74
     {
@@ -265,8 +280,8 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\MGVE_VeteranGuns\data\Priscilla\pric_body1.paa",
-			"\MGVE_VeteranGuns\data\Priscilla\pric_fun1.paa"
+			"\MGVE_VeteranEquipment\data\Priscilla\pric_body1.paa",
+			"\MGVE_VeteranEquipment\data\Priscilla\pric_fun1.paa"
 		};
     };
 	class MGVE_VG_Sawtes: CUP_arifle_AKM_top_rail
@@ -276,25 +291,25 @@ class cfgWeapons
 		displayName = "[MG] AKMN (Sawtes)";
 		hiddenSelectionsTextures[] = 
 		{
-			"\MGVE_VeteranGuns\Data\Sawtes\sawtes_body.paa",
-			"\MGVE_VeteranGuns\Data\Sawtes\sawtes_grip.paa",
-			"\MGVE_VeteranGuns\Data\Sawtes\sawtes_stock.paa"
+			"\MGVE_VeteranEquipment\Data\Sawtes\sawtes_body.paa",
+			"\MGVE_VeteranEquipment\Data\Sawtes\sawtes_grip.paa",
+			"\MGVE_VeteranEquipment\Data\Sawtes\sawtes_stock.paa"
 		};
 	};
 	class MGVE_VG_Sbeve: CUP_arifle_G36K_KSK_VFG
     {
         baseWeapon = "MGVE_VG_Sbeve";
-        displayName="[MG] G36K (Sbeve)";
+        displayName="[MG] The Nurse (Dr. Sbeve)";
         hiddenSelectionsTextures[]=
         {
-            "\MGVE_VeteranGuns\data\Sbeve\g36_commonmap_k1_co.paa",
-            "\MGVE_VeteranGuns\data\Sbeve\g36_stockfurniture_co.paa",
-            "\MGVE_VeteranGuns\data\Sbeve\g36_opticrails_co.paa",
-            "\MGVE_VeteranGuns\data\Sbeve\g36_magwell_co.paa",
+            "\MGVE_VeteranEquipment\data\Sbeve\g36_commonmap_k1_co.paa",
+            "\MGVE_VeteranEquipment\data\Sbeve\g36_stockfurniture_co.paa",
+            "\MGVE_VeteranEquipment\data\Sbeve\g36_opticrails_co.paa",
+            "\MGVE_VeteranEquipment\data\Sbeve\g36_magwell_co.paa",
 			"", 
             "\CUP\Weapons\CUP_Weapons_G36\data\tacticool_black_co.paa",
             "\CUP\Weapons\CUP_Weapons_G36\data\g36_mountsrails_co.paa",
-            "\MGVE_VeteranGuns\data\Sbeve\rail_cover_co.paa"
+            "\MGVE_VeteranEquipment\data\Sbeve\rail_cover_co.paa"
         };
 		magazineWell[]=
         {,
@@ -316,8 +331,8 @@ class cfgWeapons
 		recoil="Recoil_CUP_G3";
 		hiddenSelectionsTextures[] = 
 		{
-			"\MGVE_VeteranGuns\Data\Snake\gaysnake1.paa",
-			"\MGVE_VeteranGuns\Data\Snake\gaysnake2.paa"
+			"\MGVE_VeteranEquipment\Data\Snake\gaysnake1.paa",
+			"\MGVE_VeteranEquipment\Data\Snake\gaysnake2.paa"
 		};
 		magazines[]=
 		{
@@ -356,8 +371,8 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\MGVE_VeteranGuns\data\Texas\gtexas0.paa",
-			"\MGVE_VeteranGuns\data\Texas\gtexas1.paa",
+			"\MGVE_VeteranEquipment\data\Texas\gtexas0.paa",
+			"\MGVE_VeteranEquipment\data\Texas\gtexas1.paa",
 			"CUP\Weapons\CUP_Weapons_G3\data\rail_co.paa",
 			"CUP\weapons\CUP_Weapons_WeaponsData\data\tacticool_assets\tacticool_black_co.paa"
 		};
@@ -369,11 +384,11 @@ class cfgWeapons
 		displayName="[MG] Famas (Till)";
 		hiddenSelectionsTextures[]=
 		{
-			"\MGVE_VeteranGuns\data\Till\till_Famas.paa",
+			"\MGVE_VeteranEquipment\data\Till\till_Famas.paa",
 		};
 		reloadMagazineSound[]=
 		{
-			"\MGVE_VeteranGuns\data\Till\famasreload.ogg",
+			"\MGVE_VeteranEquipment\data\Till\famasreload.ogg",
 			1,
 			1,
 			10
@@ -386,8 +401,8 @@ class cfgWeapons
 		displayName="[MG] Waffle House (Waffles)";
 		hiddenSelectionsTextures[]=
 		{
-			"\MGVE_VeteranGuns\data\Waffles\Waffles_scar_body.paa",
-			"\MGVE_VeteranGuns\data\Waffles\Waffles_scar_acc.paa"
+			"\MGVE_VeteranEquipment\data\Waffles\Waffles_scar_body.paa",
+			"\MGVE_VeteranEquipment\data\Waffles\Waffles_scar_acc.paa"
 		};
 	};
 	class MGVE_VG_Wolf: CUP_arifle_M4A1_black
@@ -407,13 +422,38 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\MGVE_VeteranGuns\data\Wolf\wolf1body.paa",
+			"\MGVE_VeteranEquipment\data\Wolf\wolf1body.paa",
 			"CUP\Weapons\CUP_Weapons_M16\data\m4_v3_co.paa",
-			"\MGVE_VeteranGuns\data\Wolf\wolf1furn.paa",
+			"\MGVE_VeteranEquipment\data\Wolf\wolf1furn.paa",
 			"CUP\Weapons\CUP_Weapons_M16\data\tigg_m4barrel_co.paa",
 			"CUP\Weapons\CUP_Weapons_M16\data\tigg_carryhandle_co.paa",
-			"\MGVE_VeteranGuns\data\Wolf\wolf1rail.paa",
+			"\MGVE_VeteranEquipment\data\Wolf\wolf1rail.paa",
 			"CUP\Weapons\CUP_Weapons_M16\data\m4_co.paa"
+		};
+	};
+
+	/** LAUNCHERS **/
+
+	/** CLOTHING **/
+	class H_Beret_02; 	// A3/Characters_F
+	class H_Cap_blk;	// A3/Characters_F	
+	
+	class MGVE_VC_Lion: H_Beret_02
+	{
+		scope = 2;
+		displayName="[MG] Beret (Lion)";
+		hiddenSelectionsTextures[]=
+		{
+			"\MGVE_VeteranClothing\data\mg_beret_lion_co.paa"
+		};
+	};
+	class MGVE_VC_Darkie: H_Cap_blk
+	{
+		scope = 2;
+		displayName="[MG] Not Backwards Hat (Darkie)";
+		hiddenSelectionsTextures[]=
+		{
+			"\MGVE_VeteranClothing\data\darkies_cap.paa"
 		};
 	};
 };

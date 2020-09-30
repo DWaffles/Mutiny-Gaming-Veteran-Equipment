@@ -24,14 +24,14 @@ As of 9-22-2020, this mod adds
 | Veteran Gun      | MGVE_VG_MemberName_[WeaponName]   |
 | Veteran Launcher | MGVE_VL_MemberName_[WeaponName]   |
 | Veteran Clothing | MGVE_VC_MemberName_[ClothingType] |
+| Other Weapons    | MGVE_W_WeaponName_[Type]*         |
 | Ammo Configs     | MGVE_Ammo_Caliber_[Type]*         |
 | Magazine Configs | MGVE_Mag_Capacity_Caliber_[Type]* |
 
 ## Add-ons
 - `MGVE_Core` defines the Mod_Base, ammunition, magazines, and mag-well configurations
-- `MGVE_VeteranClothing` defines clothing item such as berets, hats, and any future clothing items
-- `MGVE_VeteranGuns` unsurprisingly defines veteran weapons of the small arms caliber
-- `MGVE_VeteranLaunchers` defines personalized launchers
+- `MGVE_VeteranEquipment` defines personalized veteran items such as small arms, launchers, and clothing
+- `MGVE_CustomEquipment` defines custom weapons and launchers
 
 # Links
 - [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=2234800863)
