@@ -70,7 +70,7 @@ class cfgWeapons
 	//Veteran Guns
 	class MGVE_VG_Banjo: cup_arifle_mk20
 	{
-		dlc="MutinyGamingCustomWeapons";
+		dlc="MGVE_Mod";
 		baseWeapon = "MGVE_VG_Banjo";
 		scope=2;
 		displayName="[MG] Mk 17 SV (Banjo)";
@@ -398,7 +398,7 @@ class cfgWeapons
 	};
 	class MGVE_VG_Waffles: CUP_arifle_Mk17_CQC_FG_black
 	{
-		dlc="MutinyGamingCustomWeapons";
+		dlc="MGVE_Mod";
 		scope=2;
 		displayName="[MG] Waffle House (Waffles)";
 		hiddenSelectionsTextures[]=

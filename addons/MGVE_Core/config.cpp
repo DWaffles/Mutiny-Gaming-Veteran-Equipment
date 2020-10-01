@@ -12,7 +12,7 @@ class CfgPatches
 class CfgMods
 {
 	class Mod_Base;
-	class MutinyGamingVeteranEquipment: Mod_Base
+	class MGVE_Mod: Mod_Base
 	{
         name        = "Mutiny Gaming Veteran Equipment";
         author      = "Waffles";
