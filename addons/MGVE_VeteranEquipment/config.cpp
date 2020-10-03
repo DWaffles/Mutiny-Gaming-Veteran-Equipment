@@ -11,6 +11,7 @@ class CfgPatches
 			"MGVE_VG_Candles",
 			"MGVE_VG_Devil",
 			"MGVE_VG_Didicoal",
+			"MGVE_VG_Ding"
 			"MGVE_VG_Faz",
 			"MGVE_VG_Garrett",
 			"MGVE_VG_Gooby",
@@ -66,6 +67,9 @@ class cfgWeapons
 	//RHSAFRF
 	class rhs_weap_ak103_zenitco01_b33;
 	class rhs_weap_ak74m;
+	
+	//Vanilla
+	class SMG_03C_TR_black;
 
 	//Veteran Guns
 	class MGVE_VG_Banjo: cup_arifle_mk20
@@ -121,15 +125,26 @@ class cfgWeapons
 	};
 	class MGVE_VG_Didicoal: rhs_weap_m240B
 	{
-		scope = 2;
+		scope = 1;
 		baseWeapon = "MGVE_VG_Didicoal";
 		displayName = "[MG] M240B (Didicoal)";
-		hiddenSelections[] = {"camo1","camo2","camo3"};
-		hiddenSelectionsTextures[] =
+		//hiddenSelections[] = {"camo1","camo2","camo3"};
+		/*hiddenSelectionsTextures[] =
 		{
-		"\MGVE_VeteranEquipment\data\Didicoal\m240b_2k_co.paa",
-		"\MGVE_VeteranEquipment\data\Didicoal\m240b_2k_co.paa",
-		"\rhsusf\addons\rhsusf_weapons2\m240\data\m240_co.paa"
+			"\MGVE_VeteranEquipment\data\Didicoal\Didi_m240b_2k_co.paa",
+			"\MGVE_VeteranEquipment\data\Didicoal\Didi_m240b_2k_co.paa",
+			"\rhsusf\addons\rhsusf_weapons2\m240\data\m240_co.paa"
+		};*/
+	};
+	class MGVE_VG_Ding : SMG_03C_TR_black
+	{
+		scope = 2;
+		baseWeapon = "MGVE_VG_Ding";
+		displayName = "[MG] P90 TR (Ding)";
+		hiddenSelections[]={"Camo"};
+		hiddenSelectionsTextures[]=
+		{
+			"\MGVE_VeteranEquipment\data\Ding\ding_p90tr_body.paa"
 		};
 	};
 	class MGVE_VG_Faz: CUP_arifle_AK47_GL_top_rail
@@ -137,7 +152,7 @@ class cfgWeapons
 		scope = 2;
 		scopearsenal = 2;
         baseWeapon = "MGVE_VG_Faz";
-        displayName = "[MG] AK 308 GP-25 (Faz)";
+		displayName = "[MG] Chiêu Hói (Faz)";
 		hiddenSelections[]=
 		{
 			"Camo1",
@@ -301,7 +316,7 @@ class cfgWeapons
 	class MGVE_VG_Sbeve: CUP_arifle_G36K_KSK_VFG
     {
         baseWeapon = "MGVE_VG_Sbeve";
-        displayName="[MG] The Nurse (Dr. Sbeve)";
+        displayName="[MG] The Doctor's Assistant (Sbeve)";
         hiddenSelectionsTextures[]=
         {
             "\MGVE_VeteranEquipment\data\Sbeve\g36_commonmap_k1_co.paa",

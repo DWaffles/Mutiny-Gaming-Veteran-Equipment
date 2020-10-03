@@ -22,16 +22,13 @@ class cfgWeapons
 
 	//RHSUSAF
 	class rhs_weap_mk18; //rhsusf_c_weapons
-
-	//VANILLA
-	class SMG_03C_TR_black;
-
+	
 	//Veteran Guns
 	class MGVE_VG_Enzee: rhs_weap_mk18
 	{
 		scope = 2;
 		baseWeapon = "MGVE_VG_Enzee";
-		displayName = "[MG] Mk 18 Mod 1 (Enzee)";
+		displayName = "[MG] Mk 18 Mod 1 Chiêu Hói (Enzee)";
 		hiddenSelectionsTextures[]=
 		{
 			"rhsusf\addons\rhsusf_weapons\m4\data\m4a1_actual_co.paa",
@@ -115,28 +112,6 @@ class cfgWeapons
 			"rhsusf\addons\rhsusf_weapons\m4\data\m4acc_co.paa",
 			"rhsusf\addons\rhsusf_weapons\m4\data\magpulstock_co.paa",
 			"\rhsusf\addons\rhsusf_weapons\m320\data\m320_co.paa"
-		};
-	};
-	class MGVE_VG_Ding : SMG_03C_TR_black
-	{
-		scope = 2;
-		baseWeapon = "MGVE_VG_Ding";
-		displayName = "[MG] P90 TR (Ding)";
-		hiddenSelections[]={"Camo"};
-		hiddenSelectionsTextures[]=
-		{
-			"\A3\Weapons_F_Mod\SMGs\SMG_03\data\body_black_co.paa"
-		};
-	};
-	class MGVE_VG_Ding_Debug : SMG_03C_TR_black
-	{
-		scope = 2;
-		baseWeapon = "MGVE_VG_Ding_Debug";
-		displayName = "[MG] P90 TR (Ding Debug)";
-		hiddenSelections[]={"Camo"};
-		hiddenSelectionsTextures[]=
-		{
-			"\MGVE_Development\data\_debug\debugTexture.paa"
 		};
 	};
 	class MGVE_VG_MrFox : CUP_hgun_Glock17
