@@ -11,15 +11,17 @@ class CfgPatches
 			"MGVE_VG_Candles",
 			"MGVE_VG_Devil",
 			"MGVE_VG_Didicoal",
-			"MGVE_VG_Ding"
+			"MGVE_VG_Ding",
 			"MGVE_VG_Faz",
 			"MGVE_VG_Garrett",
 			"MGVE_VG_Gooby",
 			"MGVE_VG_Hue",
 			"MGVE_VG_Jeff",
+			"MGVE_VC_Katasugi",
 			"MGVE_VG_Luke",
 			"MGVE_VG_Marius",
 			"MGVE_VG_Maxca",
+			"MGVE_VG_MrFox",
 			"MGVE_VG_Priscilla",
 			"MGVE_VG_Sawtes",
 			"MGVE_VG_Sbeve",
@@ -29,6 +31,7 @@ class CfgPatches
 			"MGVE_VG_Waffles",
 			"MGVE_VG_Wolf",
 			"MGVE_VL_Khaled",
+			"MGVE_VL_Nav",
 			"MGVE_VL_VonHoffstot"
 		};
 		requiredVersion=0.1;
@@ -60,6 +63,7 @@ class cfgWeapons
 	class CUP_arifle_mk20;
 	class CUP_Famas_F1_rail;
 	class CUP_arifle_ACRC_blk_556;
+	class CUP_hgun_Glock17;
 
 	//RHSUSAF
 	class rhs_weap_m14_rail;
@@ -128,13 +132,7 @@ class cfgWeapons
 		scope = 1;
 		baseWeapon = "MGVE_VG_Didicoal";
 		displayName = "[MG] M240B (Didicoal)";
-		//hiddenSelections[] = {"camo1","camo2","camo3"};
-		/*hiddenSelectionsTextures[] =
-		{
-			"\MGVE_VeteranEquipment\data\Didicoal\Didi_m240b_2k_co.paa",
-			"\MGVE_VeteranEquipment\data\Didicoal\Didi_m240b_2k_co.paa",
-			"\rhsusf\addons\rhsusf_weapons2\m240\data\m240_co.paa"
-		};*/
+
 	};
 	class MGVE_VG_Ding : SMG_03C_TR_black
 	{
@@ -221,7 +219,7 @@ class cfgWeapons
 	{
 		scope = 2;
 		baseWeapon = "MGVE_VG_Hue";
-		displayName = "[MG] M60 (Hue)";
+		displayName = "[MG] The Burning Hue (Hue)";
 		hiddenSelections[]=
 		{
 			"Camo1",
@@ -253,7 +251,7 @@ class cfgWeapons
 	class MGVE_VG_Luke: CUP_arifle_ACRC_blk_556
 	{
 	  	baseWeapon = "MGVE_VG_Luke";
-	  	displayName="[MG] ACR-C .300 (Luke)";
+	  	displayName="[MG] Bravo Six (Luke)";
 	  	hiddenSelectionsTextures[]=
   		{
     		"\MGVE_VeteranEquipment\data\Luke\Luke_acr_black_co.paa"
@@ -285,6 +283,17 @@ class cfgWeapons
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Maxca\gmax.paa"};
     };
+	class MGVE_VG_MrFox : CUP_hgun_Glock17
+	{
+		scope = 2;
+		baseWeapon = "MGVE_VG_MrFox";
+		displayName = "[MG] G17 (Mr. Fox)";
+		hiddenSelections[]={"Camo"};
+		hiddenSelectionsTextures[]=
+		{
+			"\MGVE_VeteranEquipment\data\MrFox\MrFox_glock17.paa"
+		};
+	};
 	class MGVE_VG_Priscilla: CUP_arifle_RPK74
     {
         scope = 2;
@@ -378,7 +387,7 @@ class cfgWeapons
     {
         scope = 2;
         baseWeapon = "MGVE_VG_Texas";
-        displayName = "[MG] G3A3 (Texas)";
+        displayName = "[MG] Das Reich (Texas)";
         hiddenSelections[]=
 		{
 			"Camo1",
@@ -464,6 +473,17 @@ class cfgWeapons
 			"\MGVE_VeteranEquipment\data\Khaled\Khaled_maaws.paa"
 		};
 	};
+	class MGVE_VL_Nav: launch_MRAWS_green_f
+	{
+		baseWeapon = "MGVE_VL_Nav";
+		scope=2;
+		displayName="[MG] Gungnir (Nav)";
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[]=
+		{
+			"\MGVE_VeteranEquipment\data\Nav\Nav_maaws.paa"
+		};
+	};
 	class MGVE_VL_VonHoffstot: launch_MRAWS_green_f
 	{
 		baseWeapon = "MGVE_VL_VonHoffstot";
@@ -479,16 +499,8 @@ class cfgWeapons
 	/** CLOTHING **/
 	class H_Beret_02; 	// A3/Characters_F
 	class H_Cap_blk;	// A3/Characters_F	
+	class CUP_H_FR_Headband_Headset;
 	
-	class MGVE_VC_Lion: H_Beret_02
-	{
-		scope = 2;
-		displayName="[MG] Beret (Lion)";
-		hiddenSelectionsTextures[]=
-		{
-			"\MGVE_VeteranEquipment\data\Lion\mg_beret_lion_co.paa"
-		};
-	};
 	class MGVE_VC_Darkie: H_Cap_blk
 	{
 		scope = 2;
@@ -498,4 +510,23 @@ class cfgWeapons
 			"\MGVE_VeteranEquipment\data\Darkie\darkies_cap.paa"
 		};
 	};
+	class MGVE_VC_Katasugi: CUP_H_FR_Headband_Headset
+	{
+		scope = 1;
+		displayName="[MG] Banzai (Katasugi)";
+		hiddenSelectionsTextures[]=
+		{
+			"\MGVE_VeteranEquipment\data\Katasugi\katasugi_headband.paa" //doesn't actually work so yeah
+		};
+	}
+	class MGVE_VC_Lion: H_Beret_02
+	{
+		scope = 2;
+		displayName="[MG] Beret (Lion)";
+		hiddenSelectionsTextures[]=
+		{
+			"\MGVE_VeteranEquipment\data\Lion\mg_beret_lion_co.paa"
+		};
+	};
+	
 };
