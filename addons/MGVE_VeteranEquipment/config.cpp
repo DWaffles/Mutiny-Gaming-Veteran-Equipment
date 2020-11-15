@@ -518,7 +518,7 @@ class cfgWeapons
 		{
 			"\MGVE_VeteranEquipment\data\Katasugi\katasugi_headband.paa" //doesn't actually work so yeah
 		};
-	}
+	};
 	class MGVE_VC_Lion: H_Beret_02
 	{
 		scope = 2;
