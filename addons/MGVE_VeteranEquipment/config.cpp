@@ -67,7 +67,7 @@ class cfgWeapons
 
 	//RHSUSAF
 	class rhs_weap_m14_rail;
-	class rhs_weap_m240B;
+	class rhs_weap_sr25;
 	//RHSAFRF
 	class rhs_weap_ak103_zenitco01_b33;
 	class rhs_weap_ak74m;
@@ -127,12 +127,20 @@ class cfgWeapons
 			"\MGVE_VeteranEquipment\data\Devil\rhs_b33_co.paa"
 		};
 	};
-	class MGVE_VG_Didicoal: rhs_weap_m240B
+	class MGVE_VG_Didicoal: rhs_weap_sr25
 	{
-		scope = 1;
+		scope = 2;
 		baseWeapon = "MGVE_VG_Didicoal";
-		displayName = "[MG] M240B (Didicoal)";
-
+		displayName = "[MG] War of the Roses (Didi)";
+		hiddenSelectionsTextures[]=
+		{
+			"MGVE_VeteranEquipment\data\Didicoal\reciever_co.paa",
+			"MGVE_VeteranEquipment\data\Didicoal\rail_co.paa",
+			"rhsusf\addons\rhsusf_weapons2\sr25\data\misc_co.paa",
+			"MGVE_VeteranEquipment\data\Didicoal\buttstock1_co.paa",
+			"rhsusf\addons\rhsusf_weapons2\sr25\data\buttstock2_co.paa",
+			"MGVE_VeteranEquipment\data\Didicoal\kacrailcover_co.paa"
+		};
 	};
 	class MGVE_VG_Ding : SMG_03C_TR_black
 	{
@@ -497,6 +505,27 @@ class cfgWeapons
 	};
 
 	/** CLOTHING **/
+	//class prototyping
+	class MGVE_H_aot_mask;
+
+	/** MUTINY MASKS **/
+	class MGVE_VC_Mask_Nav: MGVE_H_aot_mask 
+	{
+		author = "Facel/Nav";
+		displayName = "[MG] Viking Mask (Nav)";
+		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Nav\Nav_mask_viking.paa"};
+		hiddenSelectionsMaterials[] = {"\MGVE_VeteranEquipment\data\Masks\aot_mask_01.rvmat"};
+	};
+	class MGVE_VC_Mask_Luke: MGVE_H_aot_mask 
+	{
+		author = "Facel/Nav";
+		displayName = "[MG] Long Live the Queen (Luke)";
+		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Luke\mask_LukeVet.paa"};
+		hiddenSelectionsMaterials[] = {"\MGVE_VeteranEquipment\data\Masks\aot_mask_01.rvmat"};
+	};
+
+	/** FACEWEAR **/
+	/** HEADWEAR **/
 	class H_Beret_02; 	// A3/Characters_F
 	class H_Cap_blk;	// A3/Characters_F	
 	class CUP_H_FR_Headband_Headset;
@@ -528,5 +557,4 @@ class cfgWeapons
 			"\MGVE_VeteranEquipment\data\Lion\mg_beret_lion_co.paa"
 		};
 	};
-	
 };
