@@ -38,58 +38,16 @@ class CfgMods
 	};
 };
 
-class CfgWeapons 
-{
-    /*class Rifle;
-	class Rifle_Base_F: Rifle
-	{
-		class WeaponSlotsInfo;
-		class GunParticles;
-		class Eventhandlers;
-	};
-	class CUP_arifle_FNFAL: Rifle_Base_F
-	{
-		magazineWell[]=  
-		{
-            CBA_762x51_FAL, 
-		};
-	};
-	class rhs_weap_M590_5RD : Rifle_Base_F
-	{
-		magazineWell[]=  
-		{
-            RHS_12g_5rnds, 
-		};
-	};
-	class rhs_weap_M590_8RD : rhs_weap_M590_5RD
-	{
-		magazineWell[]=  
-		{
-            RHS_12g_8rnds,
-            CBA_12g_8rnds, 
-		};
-	};
-	class rhs_weap_Izh18 : Rifle_Base_F
-	{
-		magazineWell[]=  
-		{
-            CBA_12g_1rnd, 
-		};
-	};
-	class CUP_sgun_SPAS12: Rifle_Base_F
-	{
-		magazineWell[]=  
-		{
-            CBA_12g_8rnds,
-		};
-	};*/
-};
-
 class CfgAmmo
 {
+    class rhs_ammo_556x45_Mk262_ball;
 	class rhs_ammo_556x45_M855_Ball;
 	class rhs_ammo_556x45_M855A1_Ball_Red;
 
+    class B_762x39_Ball_Green_F;
+    class rhs_b_545x39_7n22_ball;
+
+    /** 300 BLK **/
     class MGVE_Ammo_300: rhs_ammo_556x45_M855_Ball
 	{
     	airFriction = -0.001;
@@ -113,53 +71,65 @@ class CfgAmmo
     	nvgOnly = 1;
     };
 
-    //
-	/*class BulletBase; //Possibly depreciated due to CUP changes?
-	class MGF_B_Flech_Submunition: BulletBase { //#00 Buckshot
-        //vanilla values have been left as comments for reference purposes
-        caliber = 4.5; //penetration of ~3mm RHA, ~9.6mm metal
-        //caliber = 1; //too high, ~5.7mm of RHA (380*1*15/1000=5.7), ~18.25 metal
-        //cost = 1;
-        //hit = 20;
-        //simulationStep = 0.0001;
-        //cartridge = "";
-        //submunitionAmmo = "B_12Gauge_Pellets_Submunition_Deploy";
-        submunitionConeType[] = {"poissondisc", 18};  //#00 Buckshot generally has 9 pellets per shell
-        //submunitionConeType[] = {"poissondisc", 18};
-        //submunitionConeAngle = 0.8;
-        //triggerSpeedCoef[] = {0.85, 1};
-        triggerTime = 0.0; // Shot takes ~5-15 feet to start spreading out and the vanilla triggerTime is too short to allow that
-        //triggerTime = 0.001;
+    /** 556x45 **/
+    class MGVE_Ammo_556x45_Tracer_Red: rhs_ammo_556x45_Mk262_ball
+    {
+        model = "\A3\Weapons_f\Data\bullettracer\tracer_red";
+        tracerColor[] = {0.8,0.2,0.1,0.04};
+        tracerColorR[] = {0,0,0,0};
     };
-    class MGF_B_Flech_Submunition_Deploy: BulletBase {
-        airFriction = -0.0010;
-        //airFriction = -0.0067;
-        caliber = 4.5;
-        hit = 10; //vanilla hit is way too high
-        //hit = 6;
-        //typicalSpeed = 360;
-        //deflecting = 35;
+    class MGVE_Ammo_556x45_TracerIR: rhs_ammo_556x45_Mk262_ball
+    {
+        model = "\A3\Weapons_f\Data\bullettracer\tracer_red";
+        tracerColor[] = {0.8,0.2,0.1,0.04};
+        tracerColorR[] = {0,0,0,0};
+        nvgOnly = 1;
     };
-    class MGF_B_Flech_Submunition_Flech: MGF_B_Flech_Submunition {
-        caliber = 4.5;
-        submunitionAmmo = "MGF_B_Flech_Submunition_Flech_Deploy";
-        submunitionConeType[] = {"poissondisc", 18};
-        submunitionConeAngle = 0.51;
+
+    /** 762x39 **/
+    class MGVE_Ammo_762x39_Tracer_Red: B_762x39_Ball_Green_F
+    {
+        model = "\A3\Weapons_f\Data\bullettracer\tracer_red";
+        tracerColor[] = {0.8,0.2,0.1,0.04};
+        tracerColorR[] = {0,0,0,0};
     };
-    class MGF_B_Flech_Submunition_Flech_Deploy: MGF_B_Flech_Submunition_Deploy {
-        airFriction = -0.0001;
-        caliber = 4.5;
-        hit = 10;
-    };*/
+    class MGVE_Ammo_762x39_TracerIR: B_762x39_Ball_Green_F
+    {
+        model = "\A3\Weapons_f\Data\bullettracer\tracer_red";
+        tracerColor[] = {0.8,0.2,0.1,0.04};
+        tracerColorR[] = {0,0,0,0};
+        nvgOnly = 1;
+    };
+
+    /** 545x39 **/
+    class MGVE_Ammo_545x39_Tracer_Red: rhs_b_545x39_7n22_ball
+    {
+        model = "\A3\Weapons_f\Data\bullettracer\tracer_red";
+        tracerColor[] = {0.8,0.2,0.1,0.04};
+        tracerColorR[] = {0,0,0,0};
+    };
+    class MGVE_Ammo_545x39_TracerIR: rhs_b_545x39_7n22_ball
+    {
+        model = "\A3\Weapons_f\Data\bullettracer\tracer_red";
+        tracerColor[] = {0.8,0.2,0.1,0.04};
+        tracerColorR[] = {0,0,0,0};
+        nvgOnly = 1;
+    };
+
+    
 };
 
 class CfgMagazines
 {
-    
 	class rhs_mag_30rnd_556x45_m855a1_pmag;
 	class rhs_mag_30rnd_556x45_m855a1_stanag;
 	class rhsusf_100rnd_556x45_m200_soft_pouch_coyote;
 	class rhsusf_200rnd_556x45_m855_soft_pouch_coyote;
+
+    class rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red;
+
+    class cup_30rnd_TE1_red_Tracer_762x39_ak47_m;
+    class rhs_30rnd_545x39_7n22_ak;
 
     /** 300 BLACKOUT PMAG**/
     class MGVE_Mag_30_300_PMAG_Normal: rhs_mag_30rnd_556x45_m855a1_pmag 
@@ -326,51 +296,133 @@ class CfgMagazines
         descriptionShort = "The .300 AAC Blackout was designed to give the AR platform extra umph in terms of power and penetration on intermediate ranges with reduce recoil while holding the 30 round mag.";
     };
 
-    /** 7.62x51 **/
-    class rhs_75rnd_762x39mm_tracer;
-    class CUP_20Rnd_TE1_Red_Tracer_762x51_G3;
-    class MGVE_Mag_30_762x51: CUP_20Rnd_TE1_Red_Tracer_762x51_G3
-	{
-		displayName="7.62mm 30rnd Mag (Tracer)";
-		ammo="CUP_B_762x51_noTracer";
-		count=30;
-		mass=18;
-		tracersEvery=1; 
-	};
-    class MGVE_Mag_75_762x51: rhs_75rnd_762x39mm_tracer
-	{
-		scope=2;
-		displayName="7.62mm 75rnd Mag";
-		descriptionShort="";
-		count=75;
-		ammo="CUP_B_762x51_Tracer_Red";
-		tracersEvery=0;
-		mass=55;
-		initSpeed=833;
-	};
-	class MGVE_Mag_75_762x51_Tracer1: rhs_75rnd_762x39mm_tracer
-	{
-		scope=2;
-		displayName="7.62mm 75rnd Mag (Tracer)";
-		descriptionShort="";
-		count=75;
-		ammo="CUP_B_762x51_Tracer_Red";
-		tracersEvery=1;
-		mass=55;
-		initSpeed=833;
-	};
-	class MGVE_Mag_75_762x51_Tracer4: rhs_75rnd_762x39mm_tracer
-	{
-		scope=2;
-		displayName="7.62mm 75rnd Mag (Tracer Every 4)";
-		descriptionShort="";
-		count=75;
-		ammo="CUP_B_762x51_Tracer_Red";
-		tracersEvery=4;
-		mass=55;
-		initSpeed=833;
-	};
+    /** 556x45 **/
+    class MGVE_Mag_30_556x45: rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red  
+    {
+        author = "Sawtes";
+        displayName = "[5.56] 30Rnd Mag";
+        ammo = "MGVE_Ammo_556x45_Tracer_Red";
+        mass=8;
+        tracersEvery=0;
+        displayNameShort = "5.56";
+        descriptionShort = "5.56";
+    };
+    class MGVE_Mag_30_556x45_Tracer1_Red: rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red  
+    {
+        author = "Sawtes";
+        displayName = "[5.56] 30Rnd Tracer Mag TE1 (Red)";
+        ammo = "MGVE_Ammo_556x45_Tracer_Red";
+        mass=8;
+        tracersEvery=1;
+        displayNameShort = "5.56 TE1";
+        descriptionShort = "5.56 TE1";
+    };
+    class MGVE_Mag_30_556x45_Tracer3_Red: rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red  
+    {
+        author = "Sawtes";
+        displayName = "[5.56] 30Rnd Tracer Mag TE3 (Red)";
+        ammo = "MGVE_Ammo_556x45_Tracer_Red";
+        mass=8;
+        tracersEvery=3;
+        displayNameShort = "5.56 TE3";
+        descriptionShort = "5.56 TE3";
+    };
+    class MGVE_Mag_30_556x45_TracerIR: rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red  
+    {
+        author = "Sawtes";
+        displayName = "[5.56] 30Rnd Tracer Mag TE1 (IR)";
+        ammo = "MGVE_Ammo_556x45_TracerIR";
+        mass=8;
+        tracersEvery=1;
+        displayNameShort = "5.56 IR";
+        descriptionShort = "5.56 IR";
+    };
 
+    /** 762x39 **/
+    class MGVE_Mag_30_762x39: cup_30rnd_TE1_red_Tracer_762x39_ak47_m  
+    {
+        author = "Sawtes";
+        displayName = "[AK 7.62] 30Rnd Mag";
+        ammo = "MGVE_Ammo_762x39_Tracer_Red";
+        mass=9.6;
+        tracersEvery=0;
+        displayNameShort = "7.62";
+        descriptionShort = "7.62";
+    };
+    class MGVE_Mag_30_762x39_Tracer1_Red: cup_30rnd_TE1_red_Tracer_762x39_ak47_m  
+    {
+        author = "Sawtes";
+        displayName = "[AK 7.62] 30Rnd Tracer Mag TE1 (Red)";
+        ammo = "MGVE_Ammo_762x39_Tracer_Red";
+        mass=9.6;
+        tracersEvery=1;
+        displayNameShort = "7.62 TE1";
+        descriptionShort = "7.62 TE1";
+    };
+    class MGVE_Mag_30_762x39_Tracer3_Red: cup_30rnd_TE1_red_Tracer_762x39_ak47_m  
+    {
+        author = "Sawtes";
+        displayName = "[AK 7.62] 30Rnd Tracer Mag TE3 (Red)";
+        ammo = "MGVE_Ammo_762x39_Tracer_Red";
+        mass=9.6;
+        tracersEvery=3;
+        displayNameShort = "7.62 TE3";
+        descriptionShort = "7.62 TE3";
+    };
+    class MGVE_Mag_30_762x39_TracerIR: cup_30rnd_TE1_red_Tracer_762x39_ak47_m  
+    {
+        author = "Sawtes";
+        displayName = "[AK 7.62] 30Rnd Tracer Mag TE1 (IR)";
+        ammo = "MGVE_Ammo_762x39_TracerIR";
+        mass=9.6;
+        tracersEvery=1;
+        displayNameShort = "7.62 IR";
+        descriptionShort = "7.62 IR";
+    };
+
+    /** 545x39 **/
+    class MGVE_Mag_30_545x39: rhs_30rnd_545x39_7n22_ak  
+    {
+        author = "Sawtes";
+        displayName = "[AK 5.45] 30Rnd Mag";
+        ammo = "MGVE_Ammo_545x39_Tracer_Red";
+        mass=8;
+        tracersEvery=0;
+        displayNameShort = "5.45";
+        descriptionShort = "5.45";
+    };
+    class MGVE_Mag_30_545x39_Tracer1_Red: rhs_30rnd_545x39_7n22_ak  
+    {
+        author = "Sawtes";
+        displayName = "[AK 5.45] 30Rnd Tracer Mag TE1 (Red)";
+        ammo = "MGVE_Ammo_545x39_Tracer_Red";
+        mass=8;
+        tracersEvery=1;
+        displayNameShort = "5.45 TE1";
+        descriptionShort = "5.45 TE1";
+    };
+    class MGVE_Mag_30_545x39_Tracer3_Red: rhs_30rnd_545x39_7n22_ak  
+    {
+        author = "Sawtes";
+        displayName = "[AK 5.45] 30Rnd Tracer Mag TE3 (Red)";
+        ammo = "MGVE_Ammo_545x39_Tracer_Red";
+        mass=8;
+        tracersEvery=3;
+        displayNameShort = "5.45 TE3";
+        descriptionShort = "5.45 TE3";
+    };
+    class MGVE_Mag_30_545x39_TracerIR: rhs_30rnd_545x39_7n22_ak  
+    {
+        author = "Sawtes";
+        displayName = "[AK 5.45] 30Rnd Tracer Mag TE1 (IR)";
+        ammo = "MGVE_Ammo_545x39_TracerIR";
+        mass=8;
+        tracersEvery=1;
+        displayNameShort = "5.45 IR";
+        descriptionShort = "5.45 IR";
+    };
+    
+    
     /** 9x19 **/
 	class cup_15rnd_9x19_m9;
     class MGVE_Mag_30_9x19: cup_15rnd_9x19_m9
@@ -397,98 +449,6 @@ class CfgMagazines
 		mass=8;
 		tracersEvery=1;
 	};
-
-    /** FLECHETTE ROUNDS **/ //Possibly depreciated due to CUP changes?
-	/*class CUP_6Rnd_B_Beneli_74Pellets;
-	class MGF_A_12G_Flechette_Benelli6: CUP_6Rnd_B_Beneli_74Pellets 
-	{
-		scope = 1;
-        author = "Sawtes";
-        displayName = "6Rnd. M1014 Flechettes";
-        ammo = "MGF_B_Flech_Submunition_Flech";
-        displayNameShort = "Flechettes";
-        descriptionShort = "Used for war crimes";
-    };
-    class CUP_8Rnd_B_Beneli_74Pellets;
-    class MGF_A_12G_Flechette_Benelli8: CUP_8Rnd_B_Beneli_74Pellets 
-	{
-		scope = 1;
-        author = "Sawtes";
-        displayName = "8Rnd. M1014 Flechettes";
-        ammo = "MGF_B_Flech_Submunition_Flech";
-        displayNameShort = "Flechettes";
-        descriptionShort = "Used for war crimes";
-    };
-    class CUP_8Rnd_B_Saiga12_74Slug_M;
-    class MGF_A_12G_Flechette_Saiga5: CUP_8Rnd_B_Saiga12_74Slug_M 
-	{
-		scope = 1;
-        author = "Sawtes";
-        displayName = "5Rnd. Saiga 12K Flechettes";
-        ammo = "MGF_B_Flech_Submunition_Flech";
-        displayNameShort = "Flechettes";
-        descriptionShort = "Used for war crimes";
-    };
-    class CUP_20Rnd_B_Saiga12_74Slug_M;
-    class MGF_A_12G_Flechette_Saiga12: CUP_20Rnd_B_Saiga12_74Slug_M 
-	{
-		scope = 1;
-        author = "Sawtes";
-        displayName = "12Rnd. Saiga 12K Flechettes";
-        ammo = "MGF_B_Flech_Submunition_Flech";
-        displayNameShort = "Flechettes";
-        descriptionShort = "Used for war crimes";
-    };
-    class CUP_20Rnd_B_AA12_Pellets;
-    class MGF_A_12G_Flechette_AA12: CUP_20Rnd_B_AA12_Pellets 
-	{
-		scope = 1;
-        author = "Sawtes";
-        displayName = "20Rnd. AA12 Flechettes";
-        ammo = "MGF_B_Flech_Submunition_Flech";
-        displayNameShort = "Flechettes";
-        descriptionShort = "Used for war crimes";
-    };
-    class ACE_2Rnd_12Gauge_Pellets_No0_Buck;
-    class MGF_A_12G_Flechette_vanilla: ACE_2Rnd_12Gauge_Pellets_No0_Buck 
-	{
-		scope = 1;
-        author = "Sawtes";
-        displayName = "12 Gauge 2Rnd Flechettes";
-        ammo = "MGF_B_Flech_Submunition_Flech";
-        displayNameShort = "Flechettes";
-        descriptionShort = "Used for war crimes";
-    };
-    class rhsusf_5rnd_00buck;
-    class MGF_A_12G_Flechette_M590_5: rhsusf_5rnd_00buck 
-	{
-		scope = 1;
-        author = "Sawtes";
-        displayName = "5Rnd Flechettes";
-        ammo = "MGF_B_Flech_Submunition_Flech";
-        displayNameShort = "Flechettes";
-        descriptionShort = "Used for war crimes";
-    };
-    class rhsusf_8rnd_00buck;
-    class MGF_A_12G_Flechette_M590_8: rhsusf_8rnd_00buck 
-	{
-		scope = 1;
-        author = "Sawtes";
-        displayName = "8Rnd Flechettes";
-        ammo = "MGF_B_Flech_Submunition_Flech";
-        displayNameShort = "Flechettes";
-        descriptionShort = "Used for war crimes";
-    };
-    class CUP_1Rnd_B_CZ584_74Pellets;
-    class MGF_A_12G_Flechette_1: CUP_1Rnd_B_CZ584_74Pellets 
-	{
-		scope = 1;
-        author = "Sawtes";
-        displayName = "1Rnd Flechettes";
-        ammo = "MGF_B_Flech_Submunition_Flech";
-        displayNameShort = "Flechettes";
-        descriptionShort = "Used for war crimes";
-    };*/
 };
 
 class CfgMagazineWells
@@ -522,6 +482,41 @@ class CfgMagazineWells
 			"MGVE_Mag_200_300_SoftPack_TracerIR",
 		};
 	};
+
+    // 556x45
+    class CBA_556x45_STANAG
+    {
+        MGVE_Mags[]=
+        {
+            "MGVE_Mag_30_556x45",
+            "MGVE_Mag_30_556x45_Tracer1_Red",
+            "MGVE_Mag_30_556x45_Tracer3_Red",
+            "MGVE_Mag_30_556x45_TracerIR",
+        };
+    };
+
+    // 762x39
+    class CBA_762x39_AK
+    {
+        MGVE_Mags[]=
+        {
+            "MGVE_Mag_30_762x39",
+            "MGVE_Mag_30_762x39_Tracer1_Red",
+            "MGVE_Mag_30_762x39_Tracer3_Red",
+            "MGVE_Mag_30_762x39_TracerIR",
+        };
+    };
+    // 545x39
+    class CBA_545x39_AK
+    {
+        MGVE_Mags[]=
+        {
+            "MGVE_Mag_30_545x39",
+            "MGVE_Mag_30_545x39_Tracer1_Red",
+            "MGVE_Mag_30_545x39_Tracer3_Red",
+            "MGVE_Mag_30_545x39_TracerIR",
+        };
+    };
 
     // 762x51
 	class CBA_762x51_FAL
@@ -624,83 +619,4 @@ class CfgMagazineWells
 			"MGVE_Mag_30_9x19_Tracer1",
 		};
 	};
-
-    // Flechettes
-	/*class CBA_12g_SAIGA //Possibly depreciated due to CUP changes?
-	{
-		MGVE_Magazines[]=
-		{
-			"MGF_A_12G_Flechette_Saiga5",
-		};
-	};
-	class CBA_12g_SAIGA_XL
-	{
-		MGVE_Magazines[]=
-		{
-			"MGF_A_12G_Flechette_Saiga12",
-		};
-	};
-	class CBA_12g_6rnds
-	{
-		MGVE_Magazines[]=
-		{
-			"MGF_A_12G_Flechette_Benelli6",
-		};
-	};
-	class CBA_12g_8rnds
-	{
-		MGVE_Magazines[]=
-		{
-			"MGF_A_12G_Flechette_Benelli8",
-		};
-	};
-	class CBA_12g_2rnds 
-	{
-        MGVE_Magazines[] = 
-        {
-            "MGF_A_12G_Flechette_vanilla",
-        };
-    };
-    class HunterShotgun_01_12GA 
-	{
-        MGVE_Magazines[] = 
-        {
-            "MGF_A_12G_Flechette_vanilla",
-        };
-    };
-    class RHS_12g_5rnds 
-	{
-        MGVE_Magazines[] = 
-        {
-            "MGF_A_12G_Flechette_M590_5",
-        };
-    };
-    class RHS_12g_8rnds 
-	{
-        MGVE_Magazines[] = 
-        {
-            "MGF_A_12G_Flechette_M590_8",
-        };
-    };
-    class CBA_12g_AA12
-	{
-        MGVE_Magazines[] = 
-        {
-            "MGF_A_12G_Flechette_AA12",
-        };
-    };
-    class CBA_12g_AA12_XL
-    {
-        MGVE_Magazines[] = 
-        {
-            "MGF_A_12G_Flechette_AA12",
-        };
-    };
-    class CBA_12g_1rnd
-	{
-		MGVE_Magazines[]=
-		{
-			"MGF_A_12G_Flechette_1",
-		};
-	};*/
 };

@@ -81,7 +81,7 @@ class cfgWeapons
 		dlc="MGVE_Mod";
 		baseWeapon = "MGVE_VG_Banjo";
 		scope=2;
-		displayName="[MG] Mk 17 SV (Banjo)";
+		displayName="[VET] Mk 17 SV (Banjo)";
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[]=
 		{
@@ -93,7 +93,7 @@ class cfgWeapons
 	{
 		scope=2;
 		baseWeapon = "MGVE_VG_Blax";
-		displayName="[MG] AK-74M (Blax)";
+		displayName="[VET] AK-74M (Blax)";
 		picture = "\MGVE_VeteranEquipment\data\Blax\akadidasicon.paa";
 		hiddenSelectionsTextures[]=
 		{
@@ -104,7 +104,7 @@ class cfgWeapons
 	{
 		baseWeapon = "MG_W_Candles";
 		scope=2;
-		displayName="[MG] FAL 50.00 (Candles)";
+		displayName="[VET] FAL 50.00 (Candles)";
 		hiddenSelectionsTextures[]=
 		{
 			"\MGVE_VeteranEquipment\data\Candles\candles_fnfal_body_co.paa",
@@ -116,7 +116,7 @@ class cfgWeapons
 	{
 		baseWeapon = "MGVE_VG_Devil";
 		scope=2;
-		displayName="[MG] AK-103 Zenitco/B-33 (Devil)";
+		displayName="[VET] AK-103 Zenitco/B-33 (Devil)";
 		hiddenSelections[] = {"body","newfront","zenit1","zenit2","zenit3"};
 		hiddenSelectionsTextures[] =
 		{
@@ -131,7 +131,7 @@ class cfgWeapons
 	{
 		scope = 2;
 		baseWeapon = "MGVE_VG_Didicoal";
-		displayName = "[MG] War of the Roses (Didi)";
+		displayName = "[VET] War of the Roses (Didi)";
 		hiddenSelectionsTextures[]=
 		{
 			"MGVE_VeteranEquipment\data\Didicoal\reciever_co.paa",
@@ -146,7 +146,7 @@ class cfgWeapons
 	{
 		scope = 2;
 		baseWeapon = "MGVE_VG_Ding";
-		displayName = "[MG] P90 TR (Ding)";
+		displayName = "[VET] P90 TR (Ding)";
 		hiddenSelections[]={"Camo"};
 		hiddenSelectionsTextures[]=
 		{
@@ -158,7 +158,7 @@ class cfgWeapons
 		scope = 2;
 		scopearsenal = 2;
         baseWeapon = "MGVE_VG_Faz";
-		displayName = "[MG] Chiêu Hói (Faz)";
+		displayName = "[VET] Chiêu Hói (Faz)";
 		hiddenSelections[]=
 		{
 			"Camo1",
@@ -201,7 +201,7 @@ class cfgWeapons
     {
         scope = 2;
         baseWeapon = "MGVE_VG_Garrett";
-        displayName = "[MG] Mk 18 Mod 1 (Garrett)";
+        displayName = "[VET] Mk 18 Mod 1 (Garrett)";
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Garrett\gaygarret.paa"};
     };
@@ -209,7 +209,7 @@ class cfgWeapons
 	{
 		scope = 2;
         baseWeapon = "MGVE_VG_Gooby";
-        displayName = "[MG] M16A2 (Gooby)";
+        displayName = "[VET] M16A2 (Gooby)";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -227,7 +227,7 @@ class cfgWeapons
 	{
 		scope = 2;
 		baseWeapon = "MGVE_VG_Hue";
-		displayName = "[MG] The Burning Hue (Hue)";
+		displayName = "[VET] The Burning Hue (Hue)";
 		hiddenSelections[]=
 		{
 			"Camo1",
@@ -247,7 +247,7 @@ class cfgWeapons
 	{
 		scope = 2;
 		baseWeapon = "MGVE_VG_Jeff";
-		displayName = "[MG] M110 PRS (Heff)";
+		displayName = "[VET] M110 PRS (Heff)";
 		hiddenSelectionsTextures[]=
     	{
 			"\MGVE_VeteranEquipment\data\Jeff\Jeff_m110_reciever_co.paa",
@@ -259,7 +259,7 @@ class cfgWeapons
 	class MGVE_VG_Luke: CUP_arifle_ACRC_blk_556
 	{
 	  	baseWeapon = "MGVE_VG_Luke";
-	  	displayName="[MG] Bravo Six (Luke)";
+	  	displayName="[VET] Bravo Six (Luke)";
 	  	hiddenSelectionsTextures[]=
   		{
     		"\MGVE_VeteranEquipment\data\Luke\Luke_acr_black_co.paa"
@@ -277,7 +277,7 @@ class cfgWeapons
 	{
 		scope = 2;
 		baseWeapon = "MGVE_VG_Marius";
-		displayName = "[MG] M14 (Marius)";
+		displayName = "[VET] M14 (Marius)";
 		hiddenSelectionsTextures[] = 
 		{
 			"\MGVE_VeteranEquipment\Data\Marius\mg_m14_marius_co.paa",
@@ -287,7 +287,7 @@ class cfgWeapons
     {
         scope = 2;
         baseWeapon = "MGVE_VG_Maxca";
-        displayName = "[MG] Mk 18 Mod 1 (Maxca)";
+        displayName = "[VET] Mk 18 Mod 1 (Maxca)";
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Maxca\gmax.paa"};
     };
@@ -295,7 +295,7 @@ class cfgWeapons
 	{
 		scope = 2;
 		baseWeapon = "MGVE_VG_MrFox";
-		displayName = "[MG] G17 (Mr. Fox)";
+		displayName = "[VET] G17 (Mr. Fox)";
 		hiddenSelections[]={"Camo"};
 		hiddenSelectionsTextures[]=
 		{
@@ -306,7 +306,7 @@ class cfgWeapons
     {
         scope = 2;
         baseWeapon = "MGVE_VG_Priscilla";
-        displayName = "[MG] RPK (Priscilla)";
+        displayName = "[VET] RPK (Priscilla)";
        	hiddenSelections[]=
 		{
 			"Camo1",
@@ -322,7 +322,7 @@ class cfgWeapons
 	{
 		scope = 2;
 		baseWeapon = "MGVE_VG_Sawtes";
-		displayName = "[MG] AKMN (Sawtes)";
+		displayName = "[VET] AKMN (Sawtes)";
 		hiddenSelectionsTextures[] = 
 		{
 			"\MGVE_VeteranEquipment\Data\Sawtes\sawtes_body.paa",
@@ -333,7 +333,7 @@ class cfgWeapons
 	class MGVE_VG_Sbeve: CUP_arifle_G36K_KSK_VFG
     {
         baseWeapon = "MGVE_VG_Sbeve";
-        displayName="[MG] The Doctor's Assistant (Sbeve)";
+        displayName="[VET] The Doctor's Assistant (Sbeve)";
         hiddenSelectionsTextures[]=
         {
             "\MGVE_VeteranEquipment\data\Sbeve\g36_commonmap_k1_co.paa",
@@ -360,7 +360,7 @@ class cfgWeapons
 	{
 		scope = 2;
 		baseWeapon = "MGVE_VG_Snake";
-		displayName = "[MG] AR-10 (Snake)";
+		displayName = "[VET] AR-10 (Snake)";
 		hiddenSelections[] = {"camo1","camo2"};
 		recoil="Recoil_CUP_G3";
 		hiddenSelectionsTextures[] = 
@@ -395,7 +395,7 @@ class cfgWeapons
     {
         scope = 2;
         baseWeapon = "MGVE_VG_Texas";
-        displayName = "[MG] Das Reich (Texas)";
+        displayName = "[VET] Das Reich (Texas)";
         hiddenSelections[]=
 		{
 			"Camo1",
@@ -415,7 +415,7 @@ class cfgWeapons
 	{
 		baseWeapon = "MGVE_VG_Till";
 		scope=2;
-		displayName="[MG] Famas (Till)";
+		displayName="[VET] Famas (Till)";
 		hiddenSelectionsTextures[]=
 		{
 			"\MGVE_VeteranEquipment\data\Till\till_Famas.paa",
@@ -432,7 +432,7 @@ class cfgWeapons
 	{
 		dlc="MGVE_Mod";
 		scope=2;
-		displayName="[MG] Waffle House (Waffles)";
+		displayName="[VET] Waffle House (Waffles)";
 		hiddenSelectionsTextures[]=
 		{
 			"\MGVE_VeteranEquipment\data\Waffles\Waffles_scar_body.paa",
@@ -443,7 +443,7 @@ class cfgWeapons
     {
         scope = 2;
         baseWeapon = "MGVE_VG_Wolf";
-        displayName = "[MG] M4A1 (Wolf)";
+        displayName = "[VET] M4A1 (Wolf)";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -474,7 +474,7 @@ class cfgWeapons
 	{
 		baseWeapon = "MGVE_VL_Khaled";
 		scope=2;
-		displayName="[MG] MAAWS Mk4 Mod 0 (Khaled)";
+		displayName="[VET] MAAWS Mk4 Mod 0 (Khaled)";
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[]=
 		{
@@ -485,7 +485,7 @@ class cfgWeapons
 	{
 		baseWeapon = "MGVE_VL_Nav";
 		scope=2;
-		displayName="[MG] Gungnir (Nav)";
+		displayName="[VET] Gungnir (Nav)";
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[]=
 		{
@@ -496,7 +496,7 @@ class cfgWeapons
 	{
 		baseWeapon = "MGVE_VL_VonHoffstot";
 		scope=1;
-		displayName="[MG] MAAWS Mk4 Mod 1 (Von Hoffstot)";
+		displayName="[VET] MAAWS Mk4 Mod 1 (Von Hoffstot)";
 		hiddenSelections[] = {"camo1"};		
 		/*hiddenSelectionsTextures[]=
 		{
@@ -509,19 +509,96 @@ class cfgWeapons
 	class MGVE_H_aot_mask;
 
 	/** MUTINY MASKS **/
-	class MGVE_VC_Mask_Nav: MGVE_H_aot_mask 
+	class MGVE_VC_Candles_Mask: MGVE_H_aot_mask 
+	{
+		author = "Facel/Mr. Fox";
+		displayName = "[VET] Gorilla Mask (Candles)";
+		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Candles\candles_mask_gorilla_co.paa"};
+		hiddenSelectionsMaterials[] = {"\MGVE_CustomEquipment\data\Masks\aot_mask_01.rvmat"};
+	};
+	class MGVE_VC_Dakota_Mask: MGVE_H_aot_mask 
+	{
+		author = "Facel/Dakota";
+		displayName = "[VET] This is the way (Dakota)";
+		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Dakota\dakota_mask_boba_co.paa"};
+		hiddenSelectionsMaterials[] = {"\MGVE_CustomEquipment\data\Masks\aot_mask_01.rvmat"};
+	};
+	class MGVE_VC_Didicoal_Mask: MGVE_H_aot_mask 
+	{
+		author = "Facel/Didi";
+		displayName = "[VET] I Don't Know (Didi)";
+		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\didicoal\didi_mask_abstract_co.paa"};
+		hiddenSelectionsMaterials[] = {"\MGVE_CustomEquipment\data\Masks\aot_mask_01.rvmat"};
+	};
+	class MGVE_VC_Garrett_Mask: MGVE_H_aot_mask
 	{
 		author = "Facel/Nav";
-		displayName = "[MG] Viking Mask (Nav)";
-		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Nav\Nav_mask_viking.paa"};
+		displayName = "[VET] Unleashed (Garrett)";
+		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Garrett\garret_mask_unleased_co.paa"};
+		hiddenSelectionsMaterials[] = {"\MGVE_CustomEquipment\data\Masks\aot_mask_01.rvmat"};
+	};
+	class MGVE_VC_Ginger_Mask: MGVE_H_aot_mask 
+	{
+		author = "Facel/Mr. Fox";
+		displayName = "[VET] York Transit Mask (Ginger)";
+		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\ginger\ginger_mask_YorkTransit_co.paa"};
+		hiddenSelectionsMaterials[] = {"\MGVE_CustomEquipment\data\Masks\aot_mask_01.rvmat"};
+	};
+	class MGVE_VC_Jeff_Mask: MGVE_H_aot_mask 
+	{
+		author = "Facel/Jayrad";
+		displayName = "[VET] Deadshot Mask (Heff)";
+		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\jeff\jeff_mask_deadshot_co.paa"};
+		hiddenSelectionsMaterials[] = {"\MGVE_CustomEquipment\data\Masks\aot_mask_01.rvmat"};
+	};
+	class MGVE_VC_Lion_Mask: MGVE_H_aot_mask 
+	{
+		author = "Facel/Texas";
+		displayName = "[VET] Imperial Mask (Lion)";
+		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\lion\lion_mask_imperial_co.paa"};
+		hiddenSelectionsMaterials[] = {"\MGVE_CustomEquipment\data\Masks\aot_mask_01.rvmat"};
+	};
+	class MGVE_VC_Luke_Mask: MGVE_H_aot_mask 
+	{
+		author = "Facel/Nav";
+		displayName = "[VET] Long Live the Queen (Luke)";
+		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Luke\luke_mask_england_co.paa"};
 		hiddenSelectionsMaterials[] = {"\MGVE_VeteranEquipment\data\Masks\aot_mask_01.rvmat"};
 	};
-	class MGVE_VC_Mask_Luke: MGVE_H_aot_mask 
+	class MGVE_VC_Meph_Mask: MGVE_H_aot_mask 
+	{
+		author = "Facel/Mr. Fox";
+		displayName = "[VET] Rust Mask (Meph)";
+		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\meph\meph_mask_rust_co.paa"};
+		hiddenSelectionsMaterials[] = {"\MGVE_CustomEquipment\data\Masks\aot_mask_01.rvmat"};
+	};
+	class MGVE_VC_MrFox_Mask: MGVE_H_aot_mask 
+	{
+		author = "Facel/Mr. Fox";
+		displayName = "[VET] Warboy Mask (Mr. Fox)";
+		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\MrFox\mrfox_mask_warboy_co.paa"};
+		hiddenSelectionsMaterials[] = {"\MGVE_CustomEquipment\data\Masks\aot_mask_01.rvmat"};
+	};
+	class MGVE_VC_Nav_Mask: MGVE_H_aot_mask 
 	{
 		author = "Facel/Nav";
-		displayName = "[MG] Long Live the Queen (Luke)";
-		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Luke\mask_LukeVet.paa"};
-		hiddenSelectionsMaterials[] = {"\MGVE_VeteranEquipment\data\Masks\aot_mask_01.rvmat"};
+		displayName = "[VET] Viking Mask (Nav)";
+		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Nav\Nav_mask_viking_co.paa"};
+		hiddenSelectionsMaterials[] = {"\MGVE_CustomEquipment\data\Masks\aot_mask_01.rvmat"};
+	};
+	class MGVE_VC_Sawtes_Mask: MGVE_H_aot_mask 
+	{
+		author = "Facel/Sawtes";
+		displayName = "[VET] Fuck the Queen (Sawtes)";
+		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Sawtes\sawtes_mask_wood_co.paa"};
+		hiddenSelectionsMaterials[] = {"\MGVE_CustomEquipment\data\Masks\aot_mask_01.rvmat"};
+	};
+	class MGVE_VC_Vanderva_Mask: MGVE_H_aot_mask 
+	{
+		author = "Facel/Nav";
+		displayName = "[VET] Bethesda no DCMA (Vanderva)";
+		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\vanderva\vanderva_mask_radioactive_co.paa"};
+		hiddenSelectionsMaterials[] = {"\MGVE_CustomEquipment\data\Masks\aot_mask_01.rvmat"};
 	};
 
 	/** FACEWEAR **/
@@ -533,7 +610,7 @@ class cfgWeapons
 	class MGVE_VC_Darkie: H_Cap_blk
 	{
 		scope = 2;
-		displayName="[MG] Not Backwards Hat (Darkie)";
+		displayName="[VET] Not Backwards Hat (Darkie)";
 		hiddenSelectionsTextures[]=
 		{
 			"\MGVE_VeteranEquipment\data\Darkie\darkies_cap.paa"
@@ -542,7 +619,7 @@ class cfgWeapons
 	class MGVE_VC_Katasugi: CUP_H_FR_Headband_Headset
 	{
 		scope = 1;
-		displayName="[MG] Banzai (Katasugi)";
+		displayName="[VET] Banzai (Katasugi)";
 		hiddenSelectionsTextures[]=
 		{
 			"\MGVE_VeteranEquipment\data\Katasugi\katasugi_headband.paa" //doesn't actually work so yeah
@@ -551,7 +628,7 @@ class cfgWeapons
 	class MGVE_VC_Lion: H_Beret_02
 	{
 		scope = 2;
-		displayName="[MG] Beret (Lion)";
+		displayName="[VET] Beret (Lion)";
 		hiddenSelectionsTextures[]=
 		{
 			"\MGVE_VeteranEquipment\data\Lion\mg_beret_lion_co.paa"

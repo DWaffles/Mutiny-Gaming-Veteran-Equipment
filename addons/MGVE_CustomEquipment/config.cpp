@@ -176,7 +176,7 @@ class cfgWeapons
 	/** AK5C **/
 	class MGVE_W_AK5C: FA1_Base_Rifle
 	{
-		scope = 1;
+		scope = 2;
 		author="Luca, Model by: A-Editor";
 		maxZeroing=600;
 		displayName="AK5C";
@@ -218,7 +218,7 @@ class cfgWeapons
 			1,
 			5
 		};
-		picture="\MGVE_CustomEquipment\data\icons\AK5c_ca.paa";
+		picture="\MGVE_CustomEquipment\data\ui\AK5c_ca.paa";
 		inertia=0.44999999;
 		recoil="recoil_aks";
 		modes[]=
@@ -234,10 +234,10 @@ class cfgWeapons
 		{
 			"\MGVE_CustomEquipment\data\textures\ak5c_co.paa"
 		};
-		/*hiddenSelectionsMaterials[]=
+		hiddenSelectionsMaterials[]=
 		{
 			"\MGVE_CustomEquipment\data\textures\ak5c.rvmat"
-		};*/
+		};
 		class Single: Mode_SemiAuto
 		{
 			class BaseSoundModeType;
@@ -306,7 +306,7 @@ class cfgWeapons
 	};
 	class MGVE_W_AK5C_Collapsed: MGVE_W_AK5C
 	{
-		scope = 1;
+		scope = 2;
 		author="Luca, Model by: A-Editor";
 		displayName="AK5C (Collapsed)";
 		model="\MGVE_CustomEquipment\data\ak5c_collapsed.p3d";
@@ -627,123 +627,60 @@ class cfgWeapons
 	class MGVE_H_Mask_Artic: MGVE_H_aot_mask 
 	{
 		author = "Facel/Till";
-		displayName = "[MG] Artic Mask";
-		hiddenSelectionsTextures[] = {"\MGVE_CustomEquipment\data\Masks\Arctic_-_Till.paa"};
-		hiddenSelectionsMaterials[] = {"\MGVE_CustomEquipment\data\Masks\aot_mask_01.rvmat"};
-	};
-	class MGVE_H_Mask_Boba: MGVE_H_aot_mask 
-	{
-		author = "Facel/Dakota";
-		displayName = "[MG] Boba Fett Mask";
-		hiddenSelectionsTextures[] = {"\MGVE_CustomEquipment\data\Masks\Boba_Fett.paa"};
-		hiddenSelectionsMaterials[] = {"\MGVE_CustomEquipment\data\Masks\aot_mask_01.rvmat"};
+		displayName = "[MG] Mask (Arctic)";
+		hiddenSelectionsTextures[] = {"\MGVE_CustomEquipment\data\Masks\mask_arctic_co.paa"};
+		hiddenSelectionsMaterials[] = {"\MGVE_CustomEquipment\data\masks\mask2\aot_mask_02.rvmat"};
 	};
 	class MGVE_H_Mask_Bowler: MGVE_H_aot_mask 
 	{
 		author = "Facel/Jayrad/Texas";
-		displayName = "[MG] Bowler Mask";
-		hiddenSelectionsTextures[] = {"\MGVE_CustomEquipment\data\Masks\Bowler_-_JayRad.paa"};
-		hiddenSelectionsMaterials[] = {"\MGVE_CustomEquipment\data\Masks\aot_mask_01.rvmat"};
+		displayName = "[MG] Mask (Bowler)";
+		hiddenSelectionsTextures[] = {"\MGVE_CustomEquipment\data\Masks\mask_bowler_co.paa"};
+		hiddenSelectionsMaterials[] = {"\MGVE_CustomEquipment\data\masks\mask3\aot_mask_03.rvmat"};
 	};
-	class MGVE_H_Mask_Deadshot: MGVE_H_aot_mask 
+	class MGVE_H_Mask_Green: MGVE_H_aot_mask 
 	{
-		author = "Facel/Jayrad";
-		displayName = "[MG] Deadshot Mask";
-		hiddenSelectionsTextures[] = {"\MGVE_CustomEquipment\data\Masks\Deadshot_-_JayRad.paa"};
-		hiddenSelectionsMaterials[] = {"\MGVE_CustomEquipment\data\Masks\aot_mask_01.rvmat"};
-	};
-	class MGVE_H_Mask_Gorilla: MGVE_H_aot_mask 
-	{
-		author = "Facel/Mr. Fox";
-		displayName = "[MG] Gorilla Mask";
-		hiddenSelectionsTextures[] = {"\MGVE_CustomEquipment\data\Masks\Gorilla_-_Mr_Fox.paa"};
-		hiddenSelectionsMaterials[] = {"\MGVE_CustomEquipment\data\Masks\aot_mask_01.rvmat"};
-	};
-	class MGVE_H_Mask_Imperial: MGVE_H_aot_mask 
-	{
-		author = "Facel/Texas";
-		displayName = "[MG] Imperial Mask";
-		hiddenSelectionsTextures[] = {"\MGVE_CustomEquipment\data\Masks\Imperial_-_Texas.paa"};
-		hiddenSelectionsMaterials[] = {"\MGVE_CustomEquipment\data\Masks\aot_mask_01.rvmat"};
-	};
-	class MGVE_H_Mask_JP93: MGVE_H_aot_mask 
-	{
-		scope = 1;
-		author = "Facel/Mr. Fox";
-		displayName = "[MG] JP93 Mask";
-		hiddenSelectionsTextures[] = {"\MGVE_CustomEquipment\data\Masks\JP93_-_Mr_Fox.paa"};
-		hiddenSelectionsMaterials[] = {"\MGVE_CustomEquipment\data\Masks\aot_mask_01.rvmat"};
+		author = "Facel/Nav";
+		displayName = "[MG] Mask (OD)";
+		hiddenSelectionsTextures[] = {"\MGVE_CustomEquipment\data\Masks\mask_od_co.paa"};
+		hiddenSelectionsMaterials[] = {"\MGVE_CustomEquipment\data\Masks\mask4\aot_mask_04.rvmat"};
 	};
 	class MGVE_H_Mask_Multicam: MGVE_H_aot_mask 
 	{
 		author = "Facel/Luke";
-		displayName = "[MG] Multicam Mask";
-		hiddenSelectionsTextures[] = {"\MGVE_CustomEquipment\data\Masks\Multicam_-_Luke.paa"};
-		hiddenSelectionsMaterials[] = {"\MGVE_CustomEquipment\data\Masks\aot_mask_01.rvmat"};
-	};
-	class MGVE_H_Mask_Risen: MGVE_H_aot_mask 
-	{
-		scope = 1;
-		author = "Facel/Texas";
-		displayName = "[MG] Risen Mask";
-		hiddenSelectionsTextures[] = {"\MGVE_CustomEquipment\data\Masks\Risen_-_Texas.paa"};
-		hiddenSelectionsMaterials[] = {"\MGVE_CustomEquipment\data\Masks\aot_mask_01.rvmat"};
-	};
-	class MGVE_H_Mask_Rust: MGVE_H_aot_mask 
-	{
-		author = "Facel/Mr. Fox";
-		displayName = "[MG] Rust Mask";
-		hiddenSelectionsTextures[] = {"\MGVE_CustomEquipment\data\Masks\Rust_-_Mr_Fox.paa"};
-		hiddenSelectionsMaterials[] = {"\MGVE_CustomEquipment\data\Masks\aot_mask_01.rvmat"};
-	};
-	class MGVE_H_Mask_York: MGVE_H_aot_mask 
-	{
-		author = "Facel/Mr. Fox";
-		displayName = "[MG] York Transit Mask";
-		hiddenSelectionsTextures[] = {"\MGVE_CustomEquipment\data\Masks\YorkTransit_-_Mr_Fox.paa"};
-		hiddenSelectionsMaterials[] = {"\MGVE_CustomEquipment\data\Masks\aot_mask_01.rvmat"};
-	};
-	class MGVE_H_Mask_Wooden: MGVE_H_aot_mask 
-	{
-		author = "Facel/";
-		displayName = "[MG] Wooden Mask";
-		hiddenSelectionsTextures[] = {"\MGVE_CustomEquipment\data\Masks\mask_WoodMask.paa"};
-		hiddenSelectionsMaterials[] = {"\MGVE_CustomEquipment\data\Masks\aot_mask_01.rvmat"};
-	};
-	class MGVE_H_Mask_Green: MGVE_H_aot_mask 
-	{
-		author = "Facel/";
-		displayName = "[MG] Green Mask";
-		hiddenSelectionsTextures[] = {"\MGVE_CustomEquipment\data\Masks\mask_GreenMask.paa"};
-		hiddenSelectionsMaterials[] = {"\MGVE_CustomEquipment\data\Masks\aot_mask_01.rvmat"};
-	};
-	class MGVE_H_Mask_Radioactive: MGVE_H_aot_mask 
-	{
-		author = "Facel/";
-		displayName = "[MG] Radioactive Mask";
-		hiddenSelectionsTextures[] = {"\MGVE_CustomEquipment\data\Masks\mask_radioactive.paa"};
-		hiddenSelectionsMaterials[] = {"\MGVE_CustomEquipment\data\Masks\aot_mask_01.rvmat"};
-	};
-	class MGVE_H_Mask_Stickerbomb: MGVE_H_aot_mask 
-	{
-		author = "Facel/Mr. Fox";
-		displayName = "[MG] Stickerbomb Mask";
-		hiddenSelectionsTextures[] = {"\MGVE_CustomEquipment\data\Masks\mask_stickerbomb.paa"};
+		displayName = "[MG] Mask (Multicam)";
+		hiddenSelectionsTextures[] = {"\MGVE_CustomEquipment\data\Masks\mask_multicam_co.paa"};
 		hiddenSelectionsMaterials[] = {"\MGVE_CustomEquipment\data\Masks\aot_mask_01.rvmat"};
 	};
 	class MGVE_H_Mask_Mutiny: MGVE_H_aot_mask 
 	{
 		author = "Facel/Nav";
-		displayName = "[MG] Mutiny Mask";
-		hiddenSelectionsTextures[] = {"\MGVE_CustomEquipment\data\Masks\mask_mutiny.paa"};
+		displayName = "[MG] Mask (Mutiny)";
+		hiddenSelectionsTextures[] = {"\MGVE_CustomEquipment\data\Masks\mask_mutiny_co.paa"};
 		hiddenSelectionsMaterials[] = {"\MGVE_CustomEquipment\data\Masks\aot_mask_01.rvmat"};
 	};
-	class MGVE_H_Mask_Warboy: MGVE_H_aot_mask 
+
+	/** MASKS UP FOR ADOPTION **/
+	class MGVE_H_Mask_JP93: MGVE_H_aot_mask 
 	{
-		scope = 1;
+		scope = 2;
 		author = "Facel/Mr. Fox";
-		displayName = "[MG] Warboy Mask";
-		hiddenSelectionsTextures[] = {"\MGVE_CustomEquipment\data\Masks\mask_warboy.paa.paa"};
+		displayName = "[MG] JP93 Mask (Please Adopt)";
+		hiddenSelectionsTextures[] = {"\MGVE_CustomEquipment\data\Masks\adopt_mask_JP93_co.paa"};
+		hiddenSelectionsMaterials[] = {"\MGVE_CustomEquipment\data\Masks\aot_mask_01.rvmat"};
+	};
+	class MGVE_H_Mask_Stickerbomb: MGVE_H_aot_mask 
+	{
+		author = "Facel/Mr. Fox";
+		displayName = "[MG] Stickerbomb Mask (Please Adopt)";
+		hiddenSelectionsTextures[] = {"\MGVE_CustomEquipment\data\Masks\adopt_mask_stickerbomb_co.paa"};
+		hiddenSelectionsMaterials[] = {"\MGVE_CustomEquipment\data\Masks\aot_mask_01.rvmat"};
+	};
+	class MGVE_H_Mask_Wood: MGVE_H_aot_mask 
+	{
+		author = "Facel/Mr. Fox";
+		displayName = "[MG] Wood Mask (Please Adopt)";
+		hiddenSelectionsTextures[] = {"\MGVE_CustomEquipment\data\Masks\adopt_mask_Wood_co.paa"};
 		hiddenSelectionsMaterials[] = {"\MGVE_CustomEquipment\data\Masks\aot_mask_01.rvmat"};
 	};
 };
