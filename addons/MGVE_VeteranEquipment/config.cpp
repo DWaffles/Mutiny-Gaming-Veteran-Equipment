@@ -56,7 +56,7 @@ class cfgWeapons
 	class CUP_arifle_M16A1;
 	class CUP_arifle_M4A1_black;
 	class CUP_arifle_Mk16_STD_black;
-	class CUP_arifle_Mk17_CQC_FG_black; //line 2506 of scar config in CUP_Weapons
+	class CUP_arifle_Mk17_STD_FG_black; //around line 2500 of scar config in CUP_Weapons
 	class CUP_arifle_RPK74;
 	class CUP_arifle_mk18_black;
 	class CUP_lmg_M60;
@@ -428,7 +428,7 @@ class cfgWeapons
 			10
 		};
 	};
-	class MGVE_VG_Waffles: CUP_arifle_Mk17_CQC_FG_black
+	class MGVE_VG_Waffles: CUP_arifle_Mk17_STD_FG_black
 	{
 		dlc="MGVE_Mod";
 		scope=2;
@@ -512,93 +512,92 @@ class cfgWeapons
 	class MGVE_VC_Candles_Mask: MGVE_H_aot_mask 
 	{
 		author = "Facel/Mr. Fox";
-		displayName = "[VET] Gorilla Mask (Candles)";
+		displayName = "[VET] Gorilla (Candles)";
 		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Candles\candles_mask_gorilla_co.paa"};
-		hiddenSelectionsMaterials[] = {"\MGVE_CustomEquipment\data\Masks\aot_mask_01.rvmat"};
 	};
 	class MGVE_VC_Dakota_Mask: MGVE_H_aot_mask 
 	{
 		author = "Facel/Dakota";
 		displayName = "[VET] This is the way (Dakota)";
 		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Dakota\dakota_mask_boba_co.paa"};
-		hiddenSelectionsMaterials[] = {"\MGVE_CustomEquipment\data\Masks\aot_mask_01.rvmat"};
 	};
 	class MGVE_VC_Didicoal_Mask: MGVE_H_aot_mask 
 	{
 		author = "Facel/Didi";
 		displayName = "[VET] I Don't Know (Didi)";
 		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\didicoal\didi_mask_abstract_co.paa"};
-		hiddenSelectionsMaterials[] = {"\MGVE_CustomEquipment\data\Masks\aot_mask_01.rvmat"};
+	};
+	class MGVE_VC_Faz_Mask: MGVE_H_aot_mask 
+	{
+		author = "Facel/Mr. Fox";
+		displayName = "[VET] Stickerbomb (Faz)";
+		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Faz\faz_mask_stickerbomb_co.paa"};
 	};
 	class MGVE_VC_Garrett_Mask: MGVE_H_aot_mask
 	{
 		author = "Facel/Nav";
 		displayName = "[VET] Unleashed (Garrett)";
 		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Garrett\garret_mask_unleased_co.paa"};
-		hiddenSelectionsMaterials[] = {"\MGVE_CustomEquipment\data\Masks\aot_mask_01.rvmat"};
+	};
+	class MGVE_VC_Garrett_Mask_Shine: MGVE_H_aot_mask
+	{
+		author = "Facel/Nav";
+		displayName = "[VET] Unleashed (Garrett)";
+		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Garrett\garret_mask_unleased_co.paa"};
 	};
 	class MGVE_VC_Ginger_Mask: MGVE_H_aot_mask 
 	{
 		author = "Facel/Mr. Fox";
 		displayName = "[VET] York Transit Mask (Ginger)";
 		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\ginger\ginger_mask_YorkTransit_co.paa"};
-		hiddenSelectionsMaterials[] = {"\MGVE_CustomEquipment\data\Masks\aot_mask_01.rvmat"};
 	};
 	class MGVE_VC_Jeff_Mask: MGVE_H_aot_mask 
 	{
 		author = "Facel/Jayrad";
 		displayName = "[VET] Deadshot Mask (Heff)";
 		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\jeff\jeff_mask_deadshot_co.paa"};
-		hiddenSelectionsMaterials[] = {"\MGVE_CustomEquipment\data\Masks\aot_mask_01.rvmat"};
 	};
 	class MGVE_VC_Lion_Mask: MGVE_H_aot_mask 
 	{
 		author = "Facel/Texas";
 		displayName = "[VET] Imperial Mask (Lion)";
 		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\lion\lion_mask_imperial_co.paa"};
-		hiddenSelectionsMaterials[] = {"\MGVE_CustomEquipment\data\Masks\aot_mask_01.rvmat"};
 	};
 	class MGVE_VC_Luke_Mask: MGVE_H_aot_mask 
 	{
 		author = "Facel/Nav";
 		displayName = "[VET] Long Live the Queen (Luke)";
 		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Luke\luke_mask_england_co.paa"};
-		hiddenSelectionsMaterials[] = {"\MGVE_VeteranEquipment\data\Masks\aot_mask_01.rvmat"};
 	};
 	class MGVE_VC_Meph_Mask: MGVE_H_aot_mask 
 	{
 		author = "Facel/Mr. Fox";
 		displayName = "[VET] Rust Mask (Meph)";
 		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\meph\meph_mask_rust_co.paa"};
-		hiddenSelectionsMaterials[] = {"\MGVE_CustomEquipment\data\Masks\aot_mask_01.rvmat"};
 	};
 	class MGVE_VC_MrFox_Mask: MGVE_H_aot_mask 
 	{
 		author = "Facel/Mr. Fox";
 		displayName = "[VET] Warboy Mask (Mr. Fox)";
 		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\MrFox\mrfox_mask_warboy_co.paa"};
-		hiddenSelectionsMaterials[] = {"\MGVE_CustomEquipment\data\Masks\aot_mask_01.rvmat"};
 	};
 	class MGVE_VC_Nav_Mask: MGVE_H_aot_mask 
 	{
 		author = "Facel/Nav";
 		displayName = "[VET] Viking Mask (Nav)";
 		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Nav\Nav_mask_viking_co.paa"};
-		hiddenSelectionsMaterials[] = {"\MGVE_CustomEquipment\data\Masks\aot_mask_01.rvmat"};
 	};
 	class MGVE_VC_Sawtes_Mask: MGVE_H_aot_mask 
 	{
 		author = "Facel/Sawtes";
 		displayName = "[VET] Fuck the Queen (Sawtes)";
 		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Sawtes\sawtes_mask_wood_co.paa"};
-		hiddenSelectionsMaterials[] = {"\MGVE_CustomEquipment\data\Masks\aot_mask_01.rvmat"};
 	};
 	class MGVE_VC_Vanderva_Mask: MGVE_H_aot_mask 
 	{
-		author = "Facel/Nav";
+		author = "Facel/Nav/Vanderva";
 		displayName = "[VET] Bethesda no DCMA (Vanderva)";
-		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\vanderva\vanderva_mask_radioactive_co.paa"};
-		hiddenSelectionsMaterials[] = {"\MGVE_CustomEquipment\data\Masks\aot_mask_01.rvmat"};
+		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\vanderva\vanderva_mask_skyrim_co.paa"};
 	};
 
 	/** FACEWEAR **/
