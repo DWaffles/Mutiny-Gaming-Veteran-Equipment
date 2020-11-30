@@ -1,6 +1,5 @@
 #include "BIS_AddonInfo.hpp"
 
-#include "basicdefines_A3.hpp"
 class CfgPatches 
 { 
     class MGVE_CustomEquipment
@@ -338,42 +337,7 @@ class cfgWeapons
 
 	/** HELMETS **/
 	class MGVE_H_aot_mask;
-	/*class MGVE_H_aot_mask: ItemCore 
-	{
-		ace_hearing_protection = 0.80;  // Protection against deafening (0 to 1, higher means more protection)
-		ace_hearing_lowerVolume = 0.40;  // Muffling of the sound (0 to 1, higher means more muffling)
 
-		author = "Facel";
-		scope = 2;
-		displayName = "AOT Mask: Black";
-		model = "\MGVE_CustomEquipment\data\aot_mask";
-		picture = "\MGVE_CustomEquipment\data\UI\gear_aot_mask_01_x_ca";
-		
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\MGVE_CustomEquipment\data\Masks\aot_mask_01_co.paa"};
-		//hiddenSelectionsMaterials[] = {"\MGVE_CustomEquipment\data\Masks\aot_mask_01.rvmat"};
-		
-		class ItemInfo: HeadgearItem 
-		{
-			allowedSlots[] = {UNIFORM_SLOT, BACKPACK_SLOT, VEST_SLOT, HEADGEAR_SLOT};
-			mass = 10;
-			uniformModel = "\MGVE_CustomEquipment\data\aot_mask.p3d";
-			hiddenSelections[] = {"camo"};
-			hiddenSelectionsTextures[] = {"\MGVE_CustomEquipment\data\Masks\aot_mask_01_co.paa"};
-			
-			modelSides[] = {6};
-		
-			class HitpointsProtectionInfo 
-			{
-				class Head 
-				{
-					hitpointName	= "HitHead"; 
-					armor		= 12; 
-					passThrough	= 0.3; 
-				};
-			};
-		};
-	};*/
 	class MGVE_H_Mask_Artic: MGVE_H_aot_mask 
 	{
 		author = "Facel/Till";
@@ -383,14 +347,20 @@ class cfgWeapons
 	class MGVE_H_Mask_Bowler: MGVE_H_aot_mask 
 	{
 		author = "Facel/Jayrad/Texas";
-		displayName = "[MG] Mask (Bowler)";
+		displayName = "[MG] Mask (Bowling Boy)";
 		hiddenSelectionsTextures[] = {"\MGVE_CustomEquipment\data\Masks\mask_bowler_co.paa"};
 	};
-	class MGVE_H_Mask_Green: MGVE_H_aot_mask 
+	class MGVE_H_Mask_Od: MGVE_H_aot_mask 
 	{
 		author = "Facel/Nav";
 		displayName = "[MG] Mask (OD)";
 		hiddenSelectionsTextures[] = {"\MGVE_CustomEquipment\data\Masks\mask_od_co.paa"};
+	};
+	class MGVE_H_Coyote: MGVE_H_aot_mask
+	{
+		author = "Facel/Nav";
+		displayName = "[MG] Mask (Coyote)";
+		hiddenSelectionsTextures[] = {"\MGVE_CustomEquipment\data\Masks\mask_coyote_co.paa"};
 	};
 	class MGVE_H_Mask_Multicam: MGVE_H_aot_mask 
 	{
@@ -412,11 +382,23 @@ class cfgWeapons
 		displayName = "[MG] Mask - Deadpool (Please Adopt)";
 		hiddenSelectionsTextures[] = {"\MGVE_CustomEquipment\data\Masks\adopt_mask_deadpool_co.paa"};
 	};
+	class MGVE_H_Mask_Phantom: MGVE_H_aot_mask 
+	{
+		author = "Facel/Mr. Fox";
+		displayName = "[MG] Mask - Phantom (Please Adopt)";
+		hiddenSelectionsTextures[] = {"\MGVE_CustomEquipment\data\Masks\adopt_mask_phantom_co.paa"};
+	};
 	class MGVE_H_Mask_JP93: MGVE_H_aot_mask 
 	{
 		author = "Facel/Mr. Fox";
 		displayName = "[MG] Mask - JP93 (Please Adopt)";
 		hiddenSelectionsTextures[] = {"\MGVE_CustomEquipment\data\Masks\adopt_mask_JP93_co.paa"};
+	};
+	class MGVE_H_Mask_Wood: MGVE_H_aot_mask 
+	{
+		author = "Facel/Mr. Fox";
+		displayName = "[MG] Mask - Wood (Please Adopt)";
+		hiddenSelectionsTextures[] = {"\MGVE_CustomEquipment\data\Masks\adopt_mask_Wood_co.paa"};
 	};
 	class MGVE_H_Mask_Radioactive: MGVE_H_aot_mask 
 	{
@@ -424,11 +406,5 @@ class cfgWeapons
 		author = "Facel/Mr. Fox";
 		displayName = "[MG] Mask - Radioactive (Please Adopt)";
 		hiddenSelectionsTextures[] = {"\MGVE_CustomEquipment\data\Masks\adopt_mask_radioactive_co.paa"};
-	};
-	class MGVE_H_Mask_Wood: MGVE_H_aot_mask 
-	{
-		author = "Facel/Mr. Fox";
-		displayName = "[MG] Mask - Wood (Please Adopt)";
-		hiddenSelectionsTextures[] = {"\MGVE_CustomEquipment\data\Masks\adopt_mask_Wood_co.paa"};
 	};
 };

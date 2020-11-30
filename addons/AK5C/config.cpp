@@ -259,12 +259,27 @@ class CfgWeapons
 			};
 		};
 	};
+	class MGVE_W_AK5C_Black: MGVE_W_AK5C
+	{
+		displayName="AK5C (Black)";
+		hiddenSelectionsTextures[]=
+		{
+			"AK5C\data\textures\ak5c_black_co.paa"
+		};
+	};
 	class MGVE_W_AK5C_Collapsed: MGVE_W_AK5C
 	{
-		scope=2;
-		author="Luca, Model by: A-Editor";
 		displayName="AK5C (Collapsed)";
 		model="\AK5C\data\ak5c_collapsed.p3d";
 		inertia=0.34999999;
+	};
+	class MGVE_W_AK5C_Black_Collapsed: MGVE_W_AK5C_Collapsed
+	{
+		displayName="AK5C (Black/Collapsed)";
+		inertia=0.34999999;
+		hiddenSelectionsTextures[]=
+		{
+			"AK5C\data\textures\ak5c_black_co.paa"
+		};
 	};
 };
