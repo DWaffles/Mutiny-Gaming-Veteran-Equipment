@@ -301,7 +301,7 @@ class cfgWeapons
     };
 	class MGVE_VG_Meph: CUP_arifle_Mk17_CQC_FG_black
 	{
-		scope=1;
+		scope=2;
 		displayName="[VET] Meph (Meph)";
 		author = "Texture: Waffles";
 		hiddenSelectionsTextures[]=
