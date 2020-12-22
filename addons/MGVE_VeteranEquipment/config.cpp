@@ -76,9 +76,10 @@ class cfgWeapons
 	
 	//Vanilla
 	class SMG_03C_TR_black;
+	class srifle_DMR_06_hunter_F;
 
 	//Veteran Guns
-	class MGVE_VG_Banjo: cup_arifle_mk20
+	class MGVE_VG_Banjo: CUP_arifle_mk20
 	{
 		baseWeapon = "MGVE_VG_Banjo";
 		author = "Texture: Texas";
@@ -281,15 +282,19 @@ class cfgWeapons
 			CBA_300_Blackout,
 		};
 	};
-	class MGVE_VG_Marius: rhs_weap_m14_rail
+	class MGVE_VG_Marius : srifle_DMR_06_hunter_F
 	{
-		scope = 2;
+		author = "Marius";
+		displayName = "[VET] M21 SWS (Marius)";
 		baseWeapon = "MGVE_VG_Marius";
-		displayName = "[VET] M14 (Marius)";
+		magazines[] = {"ACE_20Rnd_762x51_Mk316_Mod_0_Mag"};
+		hiddenSelections[] = {"camo1", "camo2"};
 		hiddenSelectionsTextures[] = 
 		{
-			"\MGVE_VeteranEquipment\Data\Marius\mg_m14_marius_co.paa",
+			"\MGVE_VeteranEquipment\Data\Marius\marius_m21_co.paa",
+			"\A3\Weapons_F_Mark\LongRangeRifles\DMR_06\Data\DMR_06_02_CO.paa"
 		};
+		hiddenSelectionsMaterials[] = {"a3\Weapons_F_Mark\LongRangeRifles\DMR_06\Data\DMR_06_01.rvmat", "a3\Weapons_F_Mark\LongRangeRifles\DMR_06\Data\DMR_06_02.rvmat"};
 	};
 	class MGVE_VG_Maxca: CUP_arifle_mk18_black
     {
@@ -530,11 +535,11 @@ class cfgWeapons
 		};*/
 	};
 
-	/** CLOTHING **/
-	//class prototyping
-	class MGVE_H_aot_mask;
+	
+	
 
 	/** MUTINY MASKS **/
+	class MGVE_H_aot_mask;
 	class MGVE_VC_Banjo_Mask: MGVE_H_aot_mask 
 	{
 		author = "Facel/Nav";
@@ -544,7 +549,7 @@ class cfgWeapons
 	class MGVE_VC_Candles_Mask: MGVE_H_aot_mask 
 	{
 		author = "Facel/Mr. Fox";
-		displayName = "[VET] Gorilla (Candles)";
+		displayName = "[VET] Misfit (Candles)";
 		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Candles\candles_mask_gorilla_co.paa"};
 	};
 	class MGVE_VC_Dakota_Mask: MGVE_H_aot_mask 
@@ -565,6 +570,12 @@ class cfgWeapons
 		displayName = "[VET] 22 A Million (Didi)";
 		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\didicoal\didi_mask_abstract_co.paa"};
 	};
+	class MGVE_VC_Elite_Mask: MGVE_H_aot_mask 
+	{
+		author = "Facel/Didi";
+		displayName = "[VET] Shock (Elite)";
+		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Elite\elite_mask_co.paa"};
+	};
 	class MGVE_VC_Faz_Mask: MGVE_H_aot_mask 
 	{
 		author = "Facel/Mr. Fox";
@@ -580,14 +591,21 @@ class cfgWeapons
 	class MGVE_VC_Ginger_Mask: MGVE_H_aot_mask 
 	{
 		author = "Facel/Mr. Fox";
-		displayName = "[VET] York Transit Mask (Ginger)";
-		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\ginger\ginger_mask_YorkTransit_co.paa"};
+		displayName = "[VET] Krashed Kar (Ginger)";
+		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\ginger\ginger_mask_co.paa"};
 	};
 	class MGVE_VC_Jeff_Mask: MGVE_H_aot_mask 
 	{
 		author = "Facel/Jayrad";
 		displayName = "[VET] Deadshot Mask (Heff)";
 		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\jeff\jeff_mask_deadshot_co.paa"};
+	};
+	class MGVE_VC_Katasugi_Mask: MGVE_H_aot_mask 
+	{
+		author = "Facel/Nav";
+		displayName = "[VET] The Menace (Katasugi)";
+		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Katasugi\katasugi_mask_co.paa"};
+		hiddenSelectionsMaterials[] = {""};
 	};
 	class MGVE_VC_Lion_Mask: MGVE_H_aot_mask 
 	{
@@ -655,14 +673,8 @@ class cfgWeapons
 		displayName = "[VET] Homestyle (Waffles)";
 		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\waffles\waffles_mask_co.paa"};
 	}
-	class MGVE_VC_Waffles_Mask_Debug: MGVE_H_aot_mask
-	{
-		scope = 1;
-		author = "Facel/Nav/Waffles";
-		displayName = "[VET] Homestyle Debug(Waffles)";
-		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\waffles\waffles_mask_debug_co.paa"};
-	}
 
+	/** CLOTHING **/
 	/** FACEWEAR **/
 	/** HEADWEAR **/
 	class H_Beret_02; 	// A3/Characters_F

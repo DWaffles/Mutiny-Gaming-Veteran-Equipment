@@ -394,6 +394,12 @@ class cfgWeapons
 		displayName = "[MG] Mask - JP93 (Please Adopt)";
 		hiddenSelectionsTextures[] = {"\MGVE_CustomEquipment\data\Masks\adopt_mask_JP93_co.paa"};
 	};
+	class MGVE_H_Mask_YorkTransit: MGVE_H_aot_mask 
+	{
+		author = "Facel/Mr. Fox";
+		displayName = "[MG] Mask - York Transit (Please Adopt)";
+		hiddenSelectionsTextures[] = {"\MGVE_CustomEquipment\data\Masks\adopt_mask_yorktransit.paa"};
+	};
 	class MGVE_H_Mask_Wood: MGVE_H_aot_mask 
 	{
 		author = "Facel/Mr. Fox";
