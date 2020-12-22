@@ -3,19 +3,20 @@ class CfgPatches
 	class AK5C
 	{
 		author="Luca";
+		units[]={};
+		weapons[]=
+		{
+			"MGVE_W_AK5C",
+			"MGVE_W_AK5C_Black",
+			"MGVE_W_AK5C_Collapsed",
+			"MGVE_W_AK5C_Black_Collapsed",
+		};
+		requiredversion=1;
 		requiredaddons[]=
 		{
 			"A3_Weapons_F",
 			"A3_Data_F"
 		};
-		requiredversion=1;
-		units[]={};
-		weapons[]=
-		{
-			"AK5C",
-			"AK5C_Collapsed"
-		};
-		magazines[]={};
 	};
 };
 class CfgCloudlets

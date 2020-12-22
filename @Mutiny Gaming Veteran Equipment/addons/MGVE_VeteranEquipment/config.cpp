@@ -17,7 +17,6 @@ class CfgPatches
 			"MGVE_VG_Gooby",
 			"MGVE_VG_Hue",
 			"MGVE_VG_Jeff",
-			"MGVE_VC_Katasugi",
 			"MGVE_VG_Luke",
 			"MGVE_VG_Marius",
 			"MGVE_VG_Maxca",
@@ -38,7 +37,7 @@ class CfgPatches
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
-			"MGVE_Core"
+			"MGVE_Ammunition"
 		};
     }; 
 }; 
@@ -457,7 +456,6 @@ class cfgWeapons
 	};
 	class MGVE_VG_Waffles: CUP_arifle_Mk17_STD_FG_black
 	{
-		dlc="MGVE_Mod";
 		scope=2;
 		displayName="[VET] Waffle House (Waffles)";
 		author = "Texture: Waffles";
@@ -535,9 +533,6 @@ class cfgWeapons
 		};*/
 	};
 
-	
-	
-
 	/** MUTINY MASKS **/
 	class MGVE_H_aot_mask;
 	class MGVE_VC_Banjo_Mask: MGVE_H_aot_mask 
@@ -572,8 +567,8 @@ class cfgWeapons
 	};
 	class MGVE_VC_Elite_Mask: MGVE_H_aot_mask 
 	{
-		author = "Facel/Didi";
-		displayName = "[VET] Shock (Elite)";
+		author = "Facel/Nav";
+		displayName = "[VET] Starsim (Elite)";
 		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Elite\elite_mask_co.paa"};
 	};
 	class MGVE_VC_Faz_Mask: MGVE_H_aot_mask 
@@ -590,8 +585,8 @@ class cfgWeapons
 	};
 	class MGVE_VC_Ginger_Mask: MGVE_H_aot_mask 
 	{
-		author = "Facel/Mr. Fox";
-		displayName = "[VET] Krashed Kar (Ginger)";
+		author = "Facel/Nav";
+		displayName = "[VET] Drag Queen (Ginger)";
 		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\ginger\ginger_mask_co.paa"};
 	};
 	class MGVE_VC_Jeff_Mask: MGVE_H_aot_mask 
@@ -621,7 +616,7 @@ class cfgWeapons
 	};
 	class MGVE_VC_Meph_Mask: MGVE_H_aot_mask 
 	{
-		author = "Facel/Mr. Fox";
+		author = "Facel/Nav";
 		displayName = "[VET] Rust Mask (Meph)";
 		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\meph\meph_mask_rust_co.paa"};
 	};
@@ -690,7 +685,7 @@ class cfgWeapons
 			"\MGVE_VeteranEquipment\data\Darkie\darkies_cap.paa"
 		};
 	};
-	class MGVE_VC_Katasugi: CUP_H_FR_Headband_Headset
+	/*class MGVE_VC_Katasugi: CUP_H_FR_Headband_Headset
 	{
 		scope = 1;
 		displayName="[VET] Banzai (Katasugi)";
@@ -698,7 +693,7 @@ class cfgWeapons
 		{
 			"\MGVE_VeteranEquipment\data\Katasugi\katasugi_headband.paa" //doesn't actually work so yeah
 		};
-	};
+	};*/
 	class MGVE_VC_Lion: H_Beret_02
 	{
 		scope = 2;

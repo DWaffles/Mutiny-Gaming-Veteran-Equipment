@@ -27,7 +27,7 @@ class CfgPatches
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
-			"MGVE_Core"
+			"MGVE_Ammunition"
 		};
     }; 
 }; 

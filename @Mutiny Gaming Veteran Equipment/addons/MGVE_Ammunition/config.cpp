@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class MGVE_Core
+	class MGVE_Ammunition
 	{
 		units[] = {};
 		weapons[] = {};
@@ -9,7 +9,7 @@ class CfgPatches
 	};
 };
 
-class CfgMods
+/*class CfgMods
 {
 	class Mod_Base;
 	class MGVE_Mod: Mod_Base
@@ -36,7 +36,7 @@ class CfgMods
 		
         dir = "MGVE";
 	};
-};
+};*/
 
 class CfgAmmo
 {
