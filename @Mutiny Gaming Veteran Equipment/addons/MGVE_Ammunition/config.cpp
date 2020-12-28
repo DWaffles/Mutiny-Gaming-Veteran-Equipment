@@ -5,7 +5,7 @@ class CfgPatches
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {rhsusf_c_weapons};
+		requiredAddons[] = {};
 	};
 };
 
@@ -38,7 +38,7 @@ class CfgPatches
 	};
 };*/
 
-class CfgAmmo
+class CfgAmmo //rhsusf_c_weapons
 {
     class rhs_ammo_556x45_Mk262_ball;
 	class rhs_ammo_556x45_M855_Ball;
@@ -115,8 +115,6 @@ class CfgAmmo
         tracerColorR[] = {0,0,0,0};
         nvgOnly = 1;
     };
-
-    
 };
 
 class CfgMagazines

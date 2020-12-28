@@ -311,7 +311,7 @@ class cfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"\MGVE_VeteranEquipment\data\Meph\meph_scar_body_co.paa",
-			"\MGVE_VeteranEquipment\data\Meph\meph_scar_acc_co.paa"
+			"\CUP\Weapons\CUP_Weapons_SCAR\data\scar_acc_black_co.paa"
 		};
 	};
 	class MGVE_VG_MrFox : CUP_hgun_Glock17
@@ -518,7 +518,7 @@ class cfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"\MGVE_VeteranEquipment\data\Nav\Nav_maaws.paa",
-			""
+			"\MGVE_VeteranEquipment\data\Nav\nav_MRAWS_02_co.paa"
 		};
 	};
 	class MGVE_VL_VonHoffstot: launch_MRAWS_green_f
@@ -546,6 +546,12 @@ class cfgWeapons
 		author = "Facel/Mr. Fox";
 		displayName = "[VET] Misfit (Candles)";
 		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Candles\candles_mask_gorilla_co.paa"};
+	};
+	class MGVE_VC_Darkie_Mask: MGVE_H_aot_mask 
+	{
+		author = "Facel/Nav";
+		displayName = "[VET] Mutiny Sex Trooper (Darkie)";
+		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\darkie\darkie_mask_trooper_co.paa"};
 	};
 	class MGVE_VC_Dakota_Mask: MGVE_H_aot_mask 
 	{
@@ -602,6 +608,12 @@ class cfgWeapons
 		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Katasugi\katasugi_mask_co.paa"};
 		hiddenSelectionsMaterials[] = {""};
 	};
+	class MGVE_VC_Kudz_Mask: MGVE_H_aot_mask 
+	{
+		author = "Facel/Nav";
+		displayName = "[VET] The Times (Kudz)";
+		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Kudz\Kudz_mask_co.paa"};
+	};
 	class MGVE_VC_Lion_Mask: MGVE_H_aot_mask 
 	{
 		author = "Facel/Nav";
@@ -613,6 +625,12 @@ class cfgWeapons
 		author = "Facel/Nav";
 		displayName = "[VET] Long Live the Queen (Luke)";
 		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Luke\luke_mask_england_co.paa"};
+	};
+	class MGVE_VC_Maxca_Mask: MGVE_H_aot_mask 
+	{
+		author = "Facel/Nav";
+		displayName = "[VET] Off-Mask (Maxca)";
+		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\maxca\maxca_mask_co.paa"};
 	};
 	class MGVE_VC_Meph_Mask: MGVE_H_aot_mask 
 	{
@@ -632,6 +650,12 @@ class cfgWeapons
 		displayName = "[VET] Viking Mask (Nav)";
 		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Nav\Nav_mask_viking_co.paa"};
 	};
+	class MGVE_VC_Priscilla_Mask: MGVE_H_aot_mask 
+	{
+		author = "Facel/Nav";
+		displayName = "[VET] Forgive Me (Priscilla)";
+		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Priscilla\priscilla_mask_co.paa"};
+	};
 	class MGVE_VC_Sawtes_Mask: MGVE_H_aot_mask 
 	{
 		author = "Facel/Sawtes";
@@ -643,6 +667,12 @@ class cfgWeapons
 		author = "Facel/Nav";
 		displayName = "[VET] Death Wish (Sbeve)";
 		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Sbeve\sbeve_mask_co.paa"};
+	};
+	class MGVE_VC_Sniper_Mask: MGVE_H_aot_mask 
+	{
+		author = "Facel/Nav";
+		displayName = "[VET] HELLO! (Sniper)";
+		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Sniper\sniper_mask_co.paa"};
 	};
 	class MGVE_VC_Teetumus_Mask: MGVE_H_aot_mask 
 	{
@@ -682,7 +712,7 @@ class cfgWeapons
 		displayName="[VET] Not Backwards Hat (Darkie)";
 		hiddenSelectionsTextures[]=
 		{
-			"\MGVE_VeteranEquipment\data\Darkie\darkies_cap.paa"
+			"\MGVE_VeteranEquipment\data\Darkie\darkie_cap.paa"
 		};
 	};
 	/*class MGVE_VC_Katasugi: CUP_H_FR_Headband_Headset
