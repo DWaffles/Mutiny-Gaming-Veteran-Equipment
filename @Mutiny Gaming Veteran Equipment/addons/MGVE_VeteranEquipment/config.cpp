@@ -514,10 +514,10 @@ class cfgWeapons
 		scope=2;
 		displayName="[VET] Gungnir (Nav)";
 		author = "Texture: Texas";
-		hiddenSelections[] = {"camo1"};
+		hiddenSelections[] = {"camo1", "camo2"};
 		hiddenSelectionsTextures[]=
 		{
-			"\MGVE_VeteranEquipment\data\Nav\Nav_maaws.paa",
+			"\MGVE_VeteranEquipment\data\Nav\Nav_maaws_01_co.paa",
 			"\MGVE_VeteranEquipment\data\Nav\nav_MRAWS_02_co.paa"
 		};
 	};
@@ -655,6 +655,12 @@ class cfgWeapons
 		author = "Facel/Nav";
 		displayName = "[VET] Forgive Me (Priscilla)";
 		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Priscilla\priscilla_mask_co.paa"};
+	};
+	class MGVE_VC_Prius_Mask: MGVE_H_aot_mask 
+	{
+		author = "Facel/Nav";
+		displayName = "[VET] The Finnish Wolf (Prius)";
+		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Prius\prius_mask_co.paa"};
 	};
 	class MGVE_VC_Sawtes_Mask: MGVE_H_aot_mask 
 	{
