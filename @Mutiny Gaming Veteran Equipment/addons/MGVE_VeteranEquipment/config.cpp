@@ -306,8 +306,8 @@ class cfgWeapons
 	class MGVE_VG_Meph: CUP_arifle_Mk17_CQC_FG_black
 	{
 		scope=2;
-		displayName="[VET] Meph (Meph)";
-		author = "Texture: Waffles";
+		displayName="[VET] Meph Dealer (Meph)";
+		author = "Model: CUP; Texture: Waffles";
 		hiddenSelectionsTextures[]=
 		{
 			"\MGVE_VeteranEquipment\data\Meph\meph_scar_body_co.paa",
@@ -547,6 +547,12 @@ class cfgWeapons
 		displayName = "[VET] Misfit (Candles)";
 		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Candles\candles_mask_gorilla_co.paa"};
 	};
+	class MGVE_VC_Cheb_Mask: MGVE_H_aot_mask 
+	{
+		author = "Facel/Nav/Texas";
+		displayName = "[VET] Seeker (Cheb)";
+		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Cheb\cheb_mask_co.paa"};
+	};
 	class MGVE_VC_Darkie_Mask: MGVE_H_aot_mask 
 	{
 		author = "Facel/Nav";
@@ -635,7 +641,7 @@ class cfgWeapons
 	class MGVE_VC_Meph_Mask: MGVE_H_aot_mask 
 	{
 		author = "Facel/Nav";
-		displayName = "[VET] Rust Mask (Meph)";
+		displayName = "[VET] Meph Head (Meph)";
 		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\meph\meph_mask_rust_co.paa"};
 	};
 	class MGVE_VC_MrFox_Mask: MGVE_H_aot_mask 
