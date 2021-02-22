@@ -653,8 +653,8 @@ class cfgWeapons
 	class MGVE_VC_Nav_Mask: MGVE_H_aot_mask 
 	{
 		author = "Facel/Nav";
-		displayName = "[VET] Viking Mask (Nav)";
-		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Nav\Nav_mask_viking_co.paa"};
+		displayName = "[VET] I don't know Blackhand or something (Nav)";
+		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Nav\Nav_mask_co.paa"};
 	};
 	class MGVE_VC_Priscilla_Mask: MGVE_H_aot_mask 
 	{
