@@ -104,7 +104,7 @@ class cfgWeapons
 	};
 	class MGVE_VG_Candles: CUP_arifle_FNFAL5060_railed
 	{
-		baseWeapon = "MG_W_Candles";
+		baseWeapon = "MGVE_VG_Candles";
 		scope=2;
 		displayName="[VET] FAL 50.00 (Candles)";
 		author = "Texture: Jay";
@@ -582,6 +582,12 @@ class cfgWeapons
 		author = "Facel/Nav";
 		displayName = "[VET] Starsim (Elite)";
 		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Elite\elite_mask_co.paa"};
+	};
+	class MGVE_VC_Enzee_Mask: MGVE_H_aot_mask 
+	{
+		author = "Facel/Nav";
+		displayName = "[VET] Shiva (Enzee)";
+		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Enzee\enzee_mask_co.paa"};
 	};
 	class MGVE_VC_Faz_Mask: MGVE_H_aot_mask 
 	{

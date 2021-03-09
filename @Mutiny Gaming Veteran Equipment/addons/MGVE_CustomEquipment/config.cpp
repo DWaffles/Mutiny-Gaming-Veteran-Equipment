@@ -350,17 +350,17 @@ class cfgWeapons
 		displayName = "[MG] Mask (Bowling Boy)";
 		hiddenSelectionsTextures[] = {"\MGVE_CustomEquipment\data\Masks\mask_bowler_co.paa"};
 	};
-	class MGVE_H_Mask_Od: MGVE_H_aot_mask 
-	{
-		author = "Facel/Nav";
-		displayName = "[MG] Mask (OD)";
-		hiddenSelectionsTextures[] = {"\MGVE_CustomEquipment\data\Masks\mask_od_co.paa"};
-	};
 	class MGVE_H_Coyote: MGVE_H_aot_mask
 	{
 		author = "Facel/Nav";
 		displayName = "[MG] Mask (Coyote)";
 		hiddenSelectionsTextures[] = {"\MGVE_CustomEquipment\data\Masks\mask_coyote_co.paa"};
+	};
+	class MGVE_H_Mask_Medic: MGVE_H_aot_mask 
+	{
+		author = "Facel/Nav";
+		displayName = "[MG] Mask (Medic)";
+		hiddenSelectionsTextures[] = {"\MGVE_CustomEquipment\data\Masks\mask_medic_co.paa"};
 	};
 	class MGVE_H_Mask_Multicam: MGVE_H_aot_mask 
 	{
@@ -374,43 +374,49 @@ class cfgWeapons
 		displayName = "[MG] Mask (Mutiny)";
 		hiddenSelectionsTextures[] = {"\MGVE_CustomEquipment\data\Masks\mask_mutiny_co.paa"};
 	};
+	class MGVE_H_Mask_Od: MGVE_H_aot_mask 
+	{
+		author = "Facel/Nav";
+		displayName = "[MG] Mask (OD)";
+		hiddenSelectionsTextures[] = {"\MGVE_CustomEquipment\data\Masks\mask_od_co.paa"};
+	};
 
 	/** MASKS UP FOR ADOPTION **/
 	class MGVE_H_Mask_Deadpool: MGVE_H_aot_mask 
 	{
 		author = "Facel/Mr. Fox";
-		displayName = "[MG] Mask - Deadpool (Please Adopt)";
+		displayName = "[MG] Mask - Deadpool (Please Adopt Me)";
 		hiddenSelectionsTextures[] = {"\MGVE_CustomEquipment\data\Masks\adopt_mask_deadpool_co.paa"};
 	};
 	class MGVE_H_Mask_Phantom: MGVE_H_aot_mask 
 	{
 		author = "Facel/Mr. Fox";
-		displayName = "[MG] Mask - Phantom (Please Adopt)";
+		displayName = "[MG] Mask - Phantom (Please Adopt Me)";
 		hiddenSelectionsTextures[] = {"\MGVE_CustomEquipment\data\Masks\adopt_mask_phantom_co.paa"};
 	};
 	class MGVE_H_Mask_JP93: MGVE_H_aot_mask 
 	{
 		author = "Facel/Mr. Fox";
-		displayName = "[MG] Mask - JP93 (Please Adopt)";
+		displayName = "[MG] Mask - JP93 (Please Adopt Me)";
 		hiddenSelectionsTextures[] = {"\MGVE_CustomEquipment\data\Masks\adopt_mask_JP93_co.paa"};
 	};
 	class MGVE_H_Mask_YorkTransit: MGVE_H_aot_mask 
 	{
 		author = "Facel/Mr. Fox";
-		displayName = "[MG] Mask - York Transit (Please Adopt)";
+		displayName = "[MG] Mask - York Transit (Please Adopt Me)";
 		hiddenSelectionsTextures[] = {"\MGVE_CustomEquipment\data\Masks\adopt_mask_yorktransit.paa"};
 	};
 	class MGVE_H_Mask_Wood: MGVE_H_aot_mask 
 	{
 		author = "Facel/Mr. Fox";
-		displayName = "[MG] Mask - Wood (Please Adopt)";
+		displayName = "[MG] Mask - Wood (Please Adopt Me)";
 		hiddenSelectionsTextures[] = {"\MGVE_CustomEquipment\data\Masks\adopt_mask_Wood_co.paa"};
 	};
 	class MGVE_H_Mask_Radioactive: MGVE_H_aot_mask 
 	{
 		scope = 1;
 		author = "Facel/Mr. Fox";
-		displayName = "[MG] Mask - Radioactive (Please Adopt)";
+		displayName = "[MG] Mask - Radioactive (Please Adopt Me)";
 		hiddenSelectionsTextures[] = {"\MGVE_CustomEquipment\data\Masks\adopt_mask_radioactive_co.paa"};
 	};
 };
