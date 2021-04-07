@@ -272,7 +272,7 @@ class cfgWeapons
 			"\MGVE_VeteranEquipment\data\Jeff\Jeff_m110_reciever_co.paa",
 			"\MGVE_VeteranEquipment\data\Jeff\Jeff_m110_stock_co.paa",
 			"cup\weapons\cup_weapons_weaponsdata\data\ris_cover\rail_cover_co.paa",
-			"cup\weapons\cup_weapons_weaponsdata\data\magpul_afg_grip\magpul_afg_co.paa"
+			"cup\weapons\cup_weapons_weaponsdata\data\magpul_afg_grip\magpul_afg_co.paa",
     	};
 	};
 	class MGVE_VG_Luke: CUP_arifle_ACRC_blk_556
@@ -289,7 +289,7 @@ class cfgWeapons
 			"",
 		};
 		magazineWell[]=
-		{,
+		{
 			CBA_300_Blackout,
 		};
 	};
@@ -542,7 +542,7 @@ class cfgWeapons
 		hiddenSelections[] = {"camo1", "camo2"};
 		hiddenSelectionsTextures[]=
 		{
-			"\MGVE_VeteranEquipment\data\Nav\Nav_maaws_01_co.paa",
+			"\MGVE_VeteranEquipment\data\Nav\nav_maaws_01_co.paa",
 			"\MGVE_VeteranEquipment\data\Nav\nav_MRAWS_02_co.paa"
 		};
 	};
@@ -823,14 +823,14 @@ class cfgWeapons
 	/** VESTS **/
 	class V_PlateCarrier2_blk;
 
-	class MGVE_VC_Gambler_Vest : V_PlateCarrier2_blk
+	class MGVE_VC_Gamler_Vest : V_PlateCarrier2_blk
 	{
 		scope = 2;
 		author = "Nav";
-		displayName = "[VET] Heavy Vest (Gambler)";
+		displayName = "[VET] Heavy Vest (Gamler)";
 		hiddenSelectionsTextures[] = 
 		{
-			"\MGVE_VeteranEquipment\data\Gambler\gambler_heavy_vest_co.paa"
+			"\MGVE_VeteranEquipment\data\Gamler\gamler_heavy_vest_co.paa"
 		};
 	};
 };

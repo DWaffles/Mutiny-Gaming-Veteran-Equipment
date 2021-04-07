@@ -16,7 +16,6 @@ class CfgPatches
 			"MGVE_W_M4A1_300_M203",
 			"MGVE_W_M249_300_VFG",
 			"MGVE_W_M249_300_RIS",
-			"MGVE_W_M16_Lee",
 			"MGVE_W_M16_AR10",
 			"cup_hgun_ballisticshield_armed",
 			"MGVE_W_Shield_Mutiny",
