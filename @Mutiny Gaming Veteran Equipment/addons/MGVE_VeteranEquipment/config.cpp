@@ -119,7 +119,7 @@ class cfgWeapons
 	{
 		baseWeapon = "MGVE_VG_Cheb_Gun";
 		scope = 2;
-		displayName = "Old World Blues (Cheb)";
+		displayName = "[VET] Old World Blues (Cheb)";
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = 
 		{
@@ -813,7 +813,7 @@ class cfgWeapons
 	{
 		scope = 2;
 		author = "Waffles";
-		displayName="[VET] Beret (Smokiee)";
+		displayName="[VET] The Pride of Mutiny (Smokiee)";
 		hiddenSelectionsTextures[]=
 		{
 			"\MGVE_VeteranEquipment\data\Smokiee\smokiee_beret_co.paa"
@@ -821,16 +821,16 @@ class cfgWeapons
 	};
 
 	/** VESTS **/
-	/*class V_PlateCarrier2_blk;
+	class V_PlateCarrier2_blk;
 
 	class MGVE_VC_Gambler_Vest : V_PlateCarrier2_blk
 	{
-		scope = 1;
+		scope = 2;
 		author = "Nav";
-		displayName = "[VET] Heavy Vest (Gamber)";
+		displayName = "[VET] Heavy Vest (Gambler)";
 		hiddenSelectionsTextures[] = 
 		{
-			"\MGVE_VeteranEquipment\data\Gambler\Gambler_vest_co.paa"
+			"\MGVE_VeteranEquipment\data\Gambler\gambler_heavy_vest_co.paa"
 		};
-	};*/
+	};
 };
