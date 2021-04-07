@@ -65,7 +65,7 @@ class cfgWeapons
 	class CUP_Famas_F1_rail;
 	class CUP_arifle_ACRC_blk_556;
 	class CUP_hgun_Glock17;
-
+	
 	//RHSUSAF
 	class rhs_weap_m14_rail;
 	class rhs_weap_sr25;
@@ -113,6 +113,18 @@ class cfgWeapons
 			"\MGVE_VeteranEquipment\data\Candles\candles_fnfal_body_co.paa",
 			"\MGVE_VeteranEquipment\data\Candles\candles_fnfal_stock_co.paa",
 			"CUP\Weapons\CUP_Weapons_FNFAL\data\fnfal_sight_fnc_co.paa"
+		};
+	};
+	class MGVE_VG_Cheb_Gun: CUP_arifle_M16A1
+	{
+		baseWeapon = "MGVE_VG_Cheb_Gun";
+		scope = 2;
+		displayName = "Old World Blues (Cheb)";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = 
+		{
+			"\MGVE_VeteranEquipment\data\Cheb\cheb_m16a1_1_co.paa",
+			"\MGVE_VeteranEquipment\data\Cheb\cheb_m16a1_2_co.paa"
 		};
 	};
 	class MGVE_VG_Devil: rhs_weap_ak103_zenitco01_b33
@@ -209,7 +221,7 @@ class cfgWeapons
         baseWeapon = "MGVE_VG_Garrett";
         displayName = "[VET] Mk 18 Mod 1 (Garrett)";
         hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Garrett\gaygarret.paa"};
+        hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Garrett\garret_mk18_co.paa"};
     };
 	class MGVE_VG_Gooby: CUP_arifle_Colt727
 	{
@@ -301,12 +313,12 @@ class cfgWeapons
         baseWeapon = "MGVE_VG_Maxca";
         displayName = "[VET] Mk 18 Mod 1 (Maxca)";
         hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Maxca\gmax.paa"};
+        hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Maxca\maxca_mk18_co.paa"};
     };
 	class MGVE_VG_Meph: CUP_arifle_Mk17_CQC_FG_black
 	{
 		scope=2;
-		displayName="[VET] Meph Dealer (Meph)";
+		displayName="[VET] Meph Dealer (Meph / Mk 17)";
 		author = "Model: CUP; Texture: Waffles";
 		hiddenSelectionsTextures[]=
 		{
@@ -323,7 +335,7 @@ class cfgWeapons
 		hiddenSelections[]={"Camo"};
 		hiddenSelectionsTextures[]=
 		{
-			"\MGVE_VeteranEquipment\data\MrFox\MrFox_glock17.paa"
+			"\MGVE_VeteranEquipment\data\MrFox\MrFox_glock17_co.paa"
 		};
 	};
 	class MGVE_VG_Priscilla: CUP_arifle_RPK74
@@ -354,12 +366,25 @@ class cfgWeapons
 			"\MGVE_VeteranEquipment\Data\Sawtes\sawtes_stock.paa"
 		};
 	};
-	class MGVE_VG_Sbeve: CUP_arifle_G36K_KSK_VFG
+	class MGVE_VG_Sbeve: CUP_arifle_FNFAL5060_railed
     {
+		scope=2;
         baseWeapon = "MGVE_VG_Sbeve";
+        displayName="[VET] The Appointment (Dr. Sbeve / FN Fal)";
+        author = "Texture: Christian";
+        hiddenSelectionsTextures[]=
+        {
+            "MGVE_VeteranEquipment\data\Sbeve\sbeve_fnfal_body_co.paa",
+            "MGVE_VeteranEquipment\data\Sbeve\sbeve_fnfal_stock_co.paa",
+        };
+    };
+	class MGVE_VG_Sbeve_G36: CUP_arifle_G36K_KSK_VFG
+    {
+		scope = 1;
+        baseWeapon = "MGVE_VG_Sbeve_G36";
         displayName="[VET] The Doctor's Assistant (Sbeve)";
 		author = "Texture: Sbeve";
-        hiddenSelectionsTextures[]=
+        /*hiddenSelectionsTextures[]=
         {
             "\MGVE_VeteranEquipment\data\Sbeve\g36_commonmap_k1_co.paa",
             "\MGVE_VeteranEquipment\data\Sbeve\g36_stockfurniture_co.paa",
@@ -369,7 +394,7 @@ class cfgWeapons
             "\CUP\Weapons\CUP_Weapons_G36\data\tacticool_black_co.paa",
             "\CUP\Weapons\CUP_Weapons_G36\data\g36_mountsrails_co.paa",
             "\MGVE_VeteranEquipment\data\Sbeve\rail_cover_co.paa"
-        };
+        };*/
 		magazineWell[]=
         {,
             STANAG_556x45,
@@ -457,7 +482,7 @@ class cfgWeapons
 	class MGVE_VG_Waffles: CUP_arifle_Mk17_STD_FG_black
 	{
 		scope=2;
-		displayName="[VET] Waffle House (Waffles)";
+		displayName="[VET] Waffle House (Waffles / Mk 17)";
 		author = "Texture: Waffles";
 		hiddenSelectionsTextures[]=
 		{
@@ -595,6 +620,13 @@ class cfgWeapons
 		displayName = "[VET] Stickerbomb (Faz)";
 		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Faz\faz_mask_co.paa"};
 	};
+	class MGVE_VC_Ferrius_Mask: MGVE_H_aot_mask 
+	{
+		scope = 1;
+		author = "Facel/Ferrius";
+		displayName = "[VET] The Danish Special (Ferrius)";
+		//hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Ferrius\ferrius_mask_co.paa"};
+	};
 	class MGVE_VC_Garrett_Mask: MGVE_H_aot_mask
 	{
 		author = "Facel/Nav";
@@ -722,8 +754,20 @@ class cfgWeapons
 	/** HEADWEAR **/
 	class H_Beret_02; 	// A3/Characters_F
 	class H_Cap_blk;	// A3/Characters_F	
-	class CUP_H_FR_Headband_Headset;
-	
+
+	class H_Headbandage_clean_f;
+	class rhsusf_mich_bare_alt;
+
+	class MGVE_VC_Dakota_Beret: H_Beret_02
+	{
+		scope = 2;
+		author = "Waffles";
+		displayName="[VET] Beret (Dakota)";
+		hiddenSelectionsTextures[]=
+		{
+			"\MGVE_VeteranEquipment\data\Dakota\dakota_beret_co.paa"
+		};
+	};
 	class MGVE_VC_Darkie: H_Cap_blk
 	{
 		scope = 2;
@@ -733,22 +777,60 @@ class cfgWeapons
 			"\MGVE_VeteranEquipment\data\Darkie\darkie_cap.paa"
 		};
 	};
-	/*class MGVE_VC_Katasugi: CUP_H_FR_Headband_Headset
+	class MGVE_VC_Jayrad_MICH: rhsusf_mich_bare_alt
 	{
-		scope = 1;
+		scope = 2;
+		author = "Waffles";
+		displayName="[VET] MICH 2000 (Jayrad)";
+		hiddenSelectionsTextures[] = 
+		{
+			"\rhsusf\addons\rhsusf_infantry\gear\head\data\bare_mich_od_rhino_co.paa", //"\MGVE_VeteranEquipment\data\Jayrad\jayrad_mich_co.paa"
+			"\MGVE_VeteranEquipment\data\Jayrad\jay_mich_acc_co.paa",
+			"\rhsusf\addons\rhsusf_infantry\gear\head\data\rhs_helmet_ach_acc_co.paa"
+		};
+	};
+	class MGVE_VC_Katasugi: H_Headbandage_clean_f 
+	{
+		scope = 2;
+		author = "Texas";
 		displayName="[VET] Banzai (Katasugi)";
 		hiddenSelectionsTextures[]=
 		{
-			"\MGVE_VeteranEquipment\data\Katasugi\katasugi_headband.paa" //doesn't actually work so yeah
+			"\MGVE_VeteranEquipment\data\Katasugi\katasugi_headband_co.paa"
 		};
-	};*/
+	};
 	class MGVE_VC_Lion: H_Beret_02
 	{
 		scope = 2;
+		author = "Texas";
 		displayName="[VET] Beret (Lion)";
 		hiddenSelectionsTextures[]=
 		{
 			"\MGVE_VeteranEquipment\data\Lion\mg_beret_lion_co.paa"
 		};
 	};
+	class MGVE_VC_Smokiee_Beret: H_Beret_02
+	{
+		scope = 2;
+		author = "Waffles";
+		displayName="[VET] Beret (Smokiee)";
+		hiddenSelectionsTextures[]=
+		{
+			"\MGVE_VeteranEquipment\data\Smokiee\smokiee_beret_co.paa"
+		};
+	};
+
+	/** VESTS **/
+	/*class V_PlateCarrier2_blk;
+
+	class MGVE_VC_Gambler_Vest : V_PlateCarrier2_blk
+	{
+		scope = 1;
+		author = "Nav";
+		displayName = "[VET] Heavy Vest (Gamber)";
+		hiddenSelectionsTextures[] = 
+		{
+			"\MGVE_VeteranEquipment\data\Gambler\Gambler_vest_co.paa"
+		};
+	};*/
 };

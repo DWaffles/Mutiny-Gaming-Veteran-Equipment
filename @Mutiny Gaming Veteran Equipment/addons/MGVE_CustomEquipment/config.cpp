@@ -192,18 +192,6 @@ class cfgWeapons
 	};
 
 	// Custom Skins
-	class MGVE_W_M16_Lee: CUP_arifle_M16A1
-	{
-		scope = 2;
-		baseWeapon = "MGVE_W_M16_Lee";
-		displayName = "M16A1 (CSA)";
-		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = 
-		{
-			"\MGVE_CustomEquipment\data\m16_lee_reciever.paa",
-			"\MGVE_CustomEquipment\data\m16_lee_stock.paa"
-		};
-	};
 	class MGVE_W_M16_AR10: CUP_arifle_M16A1
 	{
 		scope = 2;
