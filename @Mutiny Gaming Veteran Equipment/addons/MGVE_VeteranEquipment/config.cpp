@@ -24,6 +24,7 @@ class CfgPatches
 			"MGVE_VG_MrFox",
 			"MGVE_VG_Priscilla",
 			"MGVE_VG_Sawtes",
+			"MGVE_VG_Sawtes_PKP",
 			"MGVE_VG_Sbeve",
 			"MGVE_VG_Snake",
 			"MGVE_VG_Texas",
@@ -48,22 +49,23 @@ class cfgWeapons
 	//CUP Prototyping
 	class CUP_arifle_AK47_GL_top_rail;
 	class CUP_arifle_AKM_top_rail;
+	class CUP_arifle_ACRC_blk_556;
 	class CUP_arifle_Colt727;
-	class CUP_srifle_M110_black;
 	class CUP_arifle_FNFAL5060_railed;
 	class CUP_arifle_G36K_KSK_VFG;
 	class CUP_arifle_G3A3_ris_vfg_black;
+	class CUP_srifle_M110_black;
+	class CUP_arifle_mk20;
+	class CUP_arifle_mk18_black;
 	class CUP_arifle_M16A1;
 	class CUP_arifle_M4A1_black;
 	class CUP_arifle_Mk16_STD_black;
 	class CUP_arifle_Mk17_CQC_FG_black; //around line 2506 of scar config in CUP_Weapons
 	class CUP_arifle_Mk17_STD_FG_black; //around line 2500 of scar config in CUP_Weapons
 	class CUP_arifle_RPK74;
-	class CUP_arifle_mk18_black;
+	class CUP_lmg_Pecheneg_top_rail_B50_vfg;
 	class CUP_lmg_M60;
-	class CUP_arifle_mk20;
 	class CUP_Famas_F1_rail;
-	class CUP_arifle_ACRC_blk_556;
 	class CUP_hgun_Glock17;
 	
 	//RHSUSAF
@@ -356,16 +358,30 @@ class cfgWeapons
     };
 	class MGVE_VG_Sawtes: CUP_arifle_AKM_top_rail
 	{
-		scope = 2;
+		scope = 1;
 		baseWeapon = "MGVE_VG_Sawtes";
 		displayName = "[VET] AKMN (Sawtes)";
-		hiddenSelectionsTextures[] = 
+		/*hiddenSelectionsTextures[] = 
 		{
 			"\MGVE_VeteranEquipment\Data\Sawtes\sawtes_body.paa",
 			"\MGVE_VeteranEquipment\Data\Sawtes\sawtes_grip.paa",
 			"\MGVE_VeteranEquipment\Data\Sawtes\sawtes_stock.paa"
-		};
+		};*/
 	};
+	class MGVE_VG_Sawtes_PKP: CUP_lmg_Pecheneg_top_rail_B50_vfg
+    {
+        scope = 2;
+        baseWeapon = "MGVE_VG_PKP_Sawtes";
+        displayName = "[VET] Budget M249 (Sawtes)";
+        author = "Texture: Sawtes";
+        hiddenSelectionsTextures[] = 
+        {
+            "\MGVE_VeteranEquipment\data\Sawtes\Sawtes_pkm_body.paa",
+            "\MGVE_VeteranEquipment\data\Sawtes\Sawtes_pkp_body.paa",
+            "CUP\Weapons\CUP_Weapons_PK\data\pkmrap_co.paa",
+            "CUP\Weapons\CUP_Weapons_PK\data\b50_co.paa"
+        };
+    };
 	class MGVE_VG_Sbeve: CUP_arifle_FNFAL5060_railed
     {
 		scope=2;
@@ -524,14 +540,14 @@ class cfgWeapons
 	class MGVE_VL_Khaled: launch_MRAWS_green_rail_f
 	{
 		baseWeapon = "MGVE_VL_Khaled";
-		scope=2;
+		scope=1;
 		displayName="[VET] MAAWS Mk4 Mod 0 (Khaled)";
-		author = "Texture: Texas";
+		//author = "Texture: Texas";
 		hiddenSelections[] = {"camo1"};
-		hiddenSelectionsTextures[]=
+		/*hiddenSelectionsTextures[]=
 		{
 			"\MGVE_VeteranEquipment\data\Khaled\Khaled_maaws.paa"
-		};
+		};*/
 	};
 	class MGVE_VL_Nav: launch_MRAWS_green_f
 	{

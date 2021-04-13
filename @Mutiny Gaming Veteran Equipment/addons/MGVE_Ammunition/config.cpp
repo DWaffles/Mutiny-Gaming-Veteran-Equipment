@@ -9,14 +9,17 @@ class CfgPatches
 	};
 };
 
-class CfgAmmo //rhsusf_c_weapons
+class CfgAmmo 
 {
+    //rhsusf_c_weapons
     class rhs_ammo_556x45_Mk262_ball;
 	class rhs_ammo_556x45_M855_Ball;
 	class rhs_ammo_556x45_M855A1_Ball_Red;
 
     class B_762x39_Ball_Green_F;
     class rhs_b_545x39_7n22_ball;
+
+    #include "ammo_762x54.h"
 
     /** 300 BLK **/
     class MGVE_Ammo_300: rhs_ammo_556x45_M855_Ball
@@ -94,11 +97,12 @@ class CfgMagazines
 	class rhs_mag_30rnd_556x45_m855a1_stanag;
 	class rhsusf_100rnd_556x45_m200_soft_pouch_coyote;
 	class rhsusf_200rnd_556x45_m855_soft_pouch_coyote;
-
     class rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red;
 
     class cup_30rnd_TE1_red_Tracer_762x39_ak47_m;
     class rhs_30rnd_545x39_7n22_ak;
+
+    #include "mag_762x54.h"
 
     /** 300 BLACKOUT PMAG**/
     class MGVE_Mag_30_300_PMAG_Normal: rhs_mag_30rnd_556x45_m855a1_pmag 
@@ -451,7 +455,6 @@ class CfgMagazineWells
 			"MGVE_Mag_200_300_SoftPack_TracerIR",
 		};
 	};
-
     // 556x45
     class CBA_556x45_STANAG
     {
@@ -463,7 +466,6 @@ class CfgMagazineWells
             "MGVE_Mag_30_556x45_TracerIR",
         };
     };
-
     // 762x39
     class CBA_762x39_AK
     {
@@ -473,6 +475,15 @@ class CfgMagazineWells
             "MGVE_Mag_30_762x39_Tracer1_Red",
             "MGVE_Mag_30_762x39_Tracer3_Red",
             "MGVE_Mag_30_762x39_TracerIR",
+        };
+    };
+    // 762x54
+    class CBA_762x54R_LINKS
+    {
+        MGVE_Magazines[]=
+        {
+            "MGVE_Mag_150_762x54_Box_Tracer1_Red",
+            "MGVE_Mag_150_762x54_Box_Tracer1_IR_Red",
         };
     };
     // 545x39
@@ -486,7 +497,6 @@ class CfgMagazineWells
             "MGVE_Mag_30_545x39_TracerIR",
         };
     };
-
     // 762x51
 	class CBA_762x51_FAL
 	{
