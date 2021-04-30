@@ -66,7 +66,7 @@ class cfgWeapons
 	class CUP_lmg_Pecheneg_top_rail_B50_vfg;
 	class CUP_lmg_M60;
 	class CUP_Famas_F1_rail;
-	class CUP_hgun_Glock17;
+	//class CUP_hgun_Glock17;
 	
 	//RHSUSAF
 	class rhs_weap_m14_rail;
@@ -78,6 +78,9 @@ class cfgWeapons
 	//Vanilla
 	class SMG_03C_TR_black;
 	class srifle_DMR_06_hunter_F;
+
+	//MGF
+	class MGF_hgun_Glock18;
 
 	//Veteran Guns
 	class MGVE_VG_Banjo: CUP_arifle_mk20
@@ -328,11 +331,11 @@ class cfgWeapons
 			"\CUP\Weapons\CUP_Weapons_SCAR\data\scar_acc_black_co.paa"
 		};
 	};
-	class MGVE_VG_MrFox : CUP_hgun_Glock17
+	class MGVE_VG_MrFox : MGF_hgun_Glock18
 	{
 		scope = 2;
 		baseWeapon = "MGVE_VG_MrFox";
-		displayName = "[VET] G17 (Mr. Fox)";
+		displayName = "[VET] G18 (Mr. Fox)";
 		author = "Texture: Mr. Fox";
 		hiddenSelections[]={"Camo"};
 		hiddenSelectionsTextures[]=
