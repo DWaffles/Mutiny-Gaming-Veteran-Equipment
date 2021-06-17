@@ -81,6 +81,7 @@ class cfgWeapons
 
 	//MGF
 	class MGF_hgun_Glock18;
+	class MGF_Weapon_AK5C_Black;
 
 	//Veteran Guns
 	class MGVE_VG_Banjo: CUP_arifle_mk20
@@ -246,6 +247,27 @@ class cfgWeapons
 			"cup\weapons\cup_weapons_m16\data\tigg_m4barrel_co.paa"
 		};
 	};
+	class MGVE_VG_Gus : CUP_arifle_G3A3_ris_vfg_black
+    {
+        scope = 2;
+        baseWeapon = "MGVE_VG_Gus";
+        displayName = "[VET] G3A3 (Gus)";
+		author = "Model: CUP; Texture: Nav";
+        hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"Camo3",
+			"Camo4"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\MGVE_VeteranEquipment\data\Gus\gus_g3a3_body_co.paa",
+			"\MGVE_VeteranEquipment\data\Gus\gus_g3a3_acc_co.paa",
+			"CUP\Weapons\CUP_Weapons_G3\data\rail_co.paa",
+			"CUP\weapons\CUP_Weapons_WeaponsData\data\tacticool_assets\tacticool_black_co.paa"
+		};
+    };
 	class MGVE_VG_Hue: CUP_lmg_M60
 	{
 		scope = 2;
@@ -320,15 +342,15 @@ class cfgWeapons
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Maxca\maxca_mk18_co.paa"};
     };
-	class MGVE_VG_Meph: CUP_arifle_Mk17_CQC_FG_black
+	class MGVE_VG_Meph: MGF_Weapon_AK5C_Black
 	{
 		scope=2;
-		displayName="[VET] Meph Dealer (Meph / Mk 17)";
-		author = "Model: CUP; Texture: Waffles";
+		scopeArsenal=2;
+		displayName="[VET] Meph Dealer (Meph / AK-5C)";
+		author = "Model: CUP; Texture: Nav";
 		hiddenSelectionsTextures[]=
 		{
-			"\MGVE_VeteranEquipment\data\Meph\meph_scar_body_co.paa",
-			"\CUP\Weapons\CUP_Weapons_SCAR\data\scar_acc_black_co.paa"
+			"\MGVE_VeteranEquipment\data\Meph\meph_ak5c_co.paa",
 		};
 	};
 	class MGVE_VG_MrFox : MGF_hgun_Glock18
