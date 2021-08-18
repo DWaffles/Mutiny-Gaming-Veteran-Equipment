@@ -282,10 +282,10 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\MGVE_VeteranEquipment\data\Hue\body_co.paa",
-			"\MGVE_VeteranEquipment\data\Hue\body2_co.paa",
-			"\MGVE_VeteranEquipment\data\Hue\fore_co.paa",
-			"\MGVE_VeteranEquipment\data\Hue\fore_co.paa"
+			"\MGVE_VeteranEquipment\data\Hue\hue_body_co.paa",
+			"\MGVE_VeteranEquipment\data\Hue\hue_body2_co.paa",
+			"\MGVE_VeteranEquipment\data\Hue\hue_fore_co.paa",
+			"\MGVE_VeteranEquipment\data\Hue\hue_fore_co.paa"
 		};
 	};
 	class MGVE_VG_Jeff: CUP_srifle_M110_black
@@ -562,6 +562,18 @@ class cfgWeapons
 	class launch_MRAWS_green_f;
 	class launch_MRAWS_green_rail_f;
 
+	class MGVE_VL_Jager: launch_MRAWS_green_f
+	{
+		baseWeapon = "MGVE_VL_Jager";
+		scope=2;
+		displayName="[VET] Jägerfaust";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[]=
+		{
+			"\MGVE_VeteranEquipment\data\Jager\jager_maaws_mod1_1_co.paa",
+			"\MGVE_VeteranEquipment\data\Jager\jager_maaws_mod1_2_co.paa"
+		};
+	};
 	class MGVE_VL_Khaled: launch_MRAWS_green_rail_f
 	{
 		baseWeapon = "MGVE_VL_Khaled";
@@ -679,6 +691,12 @@ class cfgWeapons
 		author = "Facel/Nav";
 		displayName = "[VET] Drag Queen (Ginger)";
 		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\ginger\ginger_mask_co.paa"};
+	};
+	class MGVE_VC_Hue_Mask: MGVE_H_aot_mask 
+	{
+		author = "Facel/Nav";
+		displayName = "[VET] Ghost Rider (Hue)";
+		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\hue\hue_mask_co.paa"};
 	};
 	class MGVE_VC_Jeff_Mask: MGVE_H_aot_mask 
 	{
