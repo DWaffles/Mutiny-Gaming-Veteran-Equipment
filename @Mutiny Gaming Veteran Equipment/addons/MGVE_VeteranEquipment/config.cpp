@@ -680,6 +680,12 @@ class cfgWeapons
 		displayName = "[VET] The Danish Special (Ferrius)";
 		//hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Ferrius\ferrius_mask_co.paa"};
 	};
+	class MGVE_VC_Fuki_Mask: MGVE_H_aot_mask 
+	{
+		author = "Facel/Nav";
+		displayName = "[VET] Blindman's Vengeance (Fuki)";
+		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Fuki\fuki_mask_co.paa"};
+	};
 	class MGVE_VC_Garrett_Mask: MGVE_H_aot_mask
 	{
 		author = "Facel/Nav";
@@ -695,7 +701,7 @@ class cfgWeapons
 	class MGVE_VC_Hue_Mask: MGVE_H_aot_mask 
 	{
 		author = "Facel/Nav";
-		displayName = "[VET] Ghost Rider (Hue)";
+		displayName = "[VET] Speak No Evil (Hue)";
 		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\hue\hue_mask_co.paa"};
 	};
 	class MGVE_VC_Jeff_Mask: MGVE_H_aot_mask 
@@ -752,6 +758,12 @@ class cfgWeapons
 		author = "Facel/Nav";
 		displayName = "[VET] I don't know Blackhand or something (Nav)";
 		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Nav\Nav_mask_co.paa"};
+	};
+	class MGVE_VC_Polack_Mask: MGVE_H_aot_mask 
+	{
+		author = "Facel/Nav";
+		displayName = "[VET] Świetnie (Polack)";
+		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Polack\Polack_mask_co.paa"};
 	};
 	class MGVE_VC_Priscilla_Mask: MGVE_H_aot_mask 
 	{
