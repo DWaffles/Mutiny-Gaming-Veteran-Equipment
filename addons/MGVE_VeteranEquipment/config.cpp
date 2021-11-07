@@ -83,6 +83,9 @@ class cfgWeapons
 	class MGF_hgun_Glock18;
 	class MGF_Weapon_AK5C_Black;
 
+	//Code Heavy Veteran Guns
+	#include "MGVE_VG_Nav_AK5C.hpp"
+
 	//Veteran Guns
 	class MGVE_VG_Banjo: CUP_arifle_mk20
 	{
@@ -751,13 +754,14 @@ class cfgWeapons
 	{
 		author = "Facel/Mr. Fox";
 		displayName = "[VET] Warboy Mask (Mr. Fox)";
-		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\MrFox\mrfox_mask_warboy_co.paa"};
+		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\MrFox\mrfox_mask_warboy_v5_co.paa"};
 	};
 	class MGVE_VC_Nav_Mask: MGVE_H_aot_mask 
 	{
+		scope = 1;
 		author = "Facel/Nav";
 		displayName = "[VET] I don't know Blackhand or something (Nav)";
-		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Nav\Nav_mask_co.paa"};
+		//hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Nav\Nav_mask_co.paa"};
 	};
 	class MGVE_VC_Polack_Mask: MGVE_H_aot_mask 
 	{
@@ -800,6 +804,12 @@ class cfgWeapons
 		author = "Facel/Nav";
 		displayName = "[VET] Spurdo Spärde (Teetumus)";
 		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Teetumus\teetumus_mask_co.paa"};
+	};
+	class MGVE_VC_Texas_Mask: MGVE_H_aot_mask 
+	{
+		author = "Facel/Nav";
+		displayName = "[VET] Midas Touch (Texas)";
+		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Texas\texas_mask_midas_co.paa"};
 	};
 	class MGVE_VC_Till_Mask: MGVE_H_aot_mask 
 	{
