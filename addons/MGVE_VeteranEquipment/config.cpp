@@ -66,6 +66,7 @@ class cfgWeapons
 	class CUP_lmg_Pecheneg_top_rail_B50_vfg;
 	class CUP_lmg_M60;
 	class CUP_Famas_F1_rail;
+	class CUP_glaunch_6G30;
 	//class CUP_hgun_Glock17;
 	
 	//RHSUSAF
@@ -368,6 +369,17 @@ class cfgWeapons
 			"\MGVE_VeteranEquipment\data\MrFox\MrFox_glock17_co.paa"
 		};
 	};
+	class MGVE_VG_Polack: CUP_glaunch_6G30
+	{
+		baseWeapon = "MGVE_VL_Polack";
+		scope=2;
+		displayName="[VET] Arizona Bomber (Polack)";
+		author = "Texture: Nav";
+		hiddenSelectionsTextures[]=
+		{
+			"\MGVE_VeteranEquipment\data\Polack\polack_6g30_co.paa",
+		};
+	};
 	class MGVE_VG_Priscilla: CUP_arifle_RPK74
     {
         scope = 2;
@@ -380,8 +392,8 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\MGVE_VeteranEquipment\data\Priscilla\pric_body1.paa",
-			"\MGVE_VeteranEquipment\data\Priscilla\pric_fun1.paa"
+			"\MGVE_VeteranEquipment\data\Priscilla\priscilla_rpk74_body_co.paa",
+			"\MGVE_VeteranEquipment\data\Priscilla\priscilla_rpk74_stock_co.paa"
 		};
     };
 	class MGVE_VG_Sawtes: CUP_arifle_AKM_top_rail
@@ -389,12 +401,6 @@ class cfgWeapons
 		scope = 1;
 		baseWeapon = "MGVE_VG_Sawtes";
 		displayName = "[VET] AKMN (Sawtes)";
-		/*hiddenSelectionsTextures[] = 
-		{
-			"\MGVE_VeteranEquipment\Data\Sawtes\sawtes_body.paa",
-			"\MGVE_VeteranEquipment\Data\Sawtes\sawtes_grip.paa",
-			"\MGVE_VeteranEquipment\Data\Sawtes\sawtes_stock.paa"
-		};*/
 	};
 	class MGVE_VG_Sawtes_PKP: CUP_lmg_Pecheneg_top_rail_B50_vfg
     {
@@ -428,17 +434,6 @@ class cfgWeapons
         baseWeapon = "MGVE_VG_Sbeve_G36";
         displayName="[VET] The Doctor's Assistant (Sbeve)";
 		author = "Texture: Sbeve";
-        /*hiddenSelectionsTextures[]=
-        {
-            "\MGVE_VeteranEquipment\data\Sbeve\g36_commonmap_k1_co.paa",
-            "\MGVE_VeteranEquipment\data\Sbeve\g36_stockfurniture_co.paa",
-            "\MGVE_VeteranEquipment\data\Sbeve\g36_opticrails_co.paa",
-            "\MGVE_VeteranEquipment\data\Sbeve\g36_magwell_co.paa",
-			"", 
-            "\CUP\Weapons\CUP_Weapons_G36\data\tacticool_black_co.paa",
-            "\CUP\Weapons\CUP_Weapons_G36\data\g36_mountsrails_co.paa",
-            "\MGVE_VeteranEquipment\data\Sbeve\rail_cover_co.paa"
-        };*/
 		magazineWell[]=
         {,
             STANAG_556x45,
@@ -485,6 +480,19 @@ class cfgWeapons
 			"CBA_762x51_AR10",
 		};
 	};
+	class MGVE_VG_Sniper: CUP_arifle_M16A1
+    {
+        scope = 2;
+        baseWeapon = "MGVE_VG_Sniper";
+        displayName = "[VET] The Uninvited Guest (Sniper)";
+		hiddenSelections[] = {"camo1","camo2"};
+		author = "Texture: Nav";
+		hiddenSelectionsTextures[]=
+		{
+			"\MGVE_VeteranEquipment\data\Sniper\sniper_m16a1_guest_reciever_co.paa",
+			"\MGVE_VeteranEquipment\data\Sniper\sniper_m16a1_guest_stock_co.paa",
+		};
+    };
 	class MGVE_VG_Texas: CUP_arifle_G3A3_ris_vfg_black
     {
         scope = 2;
@@ -565,6 +573,8 @@ class cfgWeapons
 	class launch_MRAWS_green_f;
 	class launch_MRAWS_green_rail_f;
 
+	
+
 	class MGVE_VL_Jager: launch_MRAWS_green_f
 	{
 		baseWeapon = "MGVE_VL_Jager";
@@ -582,12 +592,7 @@ class cfgWeapons
 		baseWeapon = "MGVE_VL_Khaled";
 		scope=1;
 		displayName="[VET] MAAWS Mk4 Mod 0 (Khaled)";
-		//author = "Texture: Texas";
 		hiddenSelections[] = {"camo1"};
-		/*hiddenSelectionsTextures[]=
-		{
-			"\MGVE_VeteranEquipment\data\Khaled\Khaled_maaws.paa"
-		};*/
 	};
 	class MGVE_VL_Nav: launch_MRAWS_green_f
 	{
@@ -761,7 +766,6 @@ class cfgWeapons
 		scope = 1;
 		author = "Facel/Nav";
 		displayName = "[VET] I don't know Blackhand or something (Nav)";
-		//hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Nav\Nav_mask_co.paa"};
 	};
 	class MGVE_VC_Polack_Mask: MGVE_H_aot_mask 
 	{
@@ -771,9 +775,9 @@ class cfgWeapons
 	};
 	class MGVE_VC_Priscilla_Mask: MGVE_H_aot_mask 
 	{
+		scope = 1;
 		author = "Facel/Nav";
 		displayName = "[VET] Forgive Me (Priscilla)";
-		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\Priscilla\priscilla_mask_co.paa"};
 	};
 	class MGVE_VC_Prius_Mask: MGVE_H_aot_mask 
 	{
@@ -835,9 +839,10 @@ class cfgWeapons
 	/** HEADWEAR **/
 	class H_Beret_02; 	// A3/Characters_F
 	class H_Cap_blk;	// A3/Characters_F	
-
 	class H_Headbandage_clean_f;
+
 	class rhsusf_mich_bare_alt;
+	class CUP_H_RUS_Altyn_Shield_Up_black;
 
 	class MGVE_VC_Dakota_Beret: H_Beret_02
 	{
@@ -888,6 +893,17 @@ class cfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"\MGVE_VeteranEquipment\data\Lion\mg_beret_lion_co.paa"
+		};
+	};
+	class MGVE_VC_Priscilla_Helmet: CUP_H_RUS_Altyn_Shield_Up_black
+	{
+		scope = 2;
+		author = "Texture: Nav";
+		displayName="[VET] Altyn (Priscilla)";
+		hiddenSelectionsTextures[]=
+		{
+			"\MGVE_VeteranEquipment\data\Priscilla\priscilla_altyn_body_co.paa",
+			"\MGVE_VeteranEquipment\data\Priscilla\priscilla_altyn_straps_co.paa",
 		};
 	};
 	class MGVE_VC_Smokiee_Beret: H_Beret_02
