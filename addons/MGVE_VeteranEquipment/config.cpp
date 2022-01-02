@@ -47,6 +47,7 @@ class cfgWeapons
 { 
 	/** SMALL ARMS **/
 	//CUP Prototyping
+	class CUP_arifle_AK15_AFG_black;
 	class CUP_arifle_AK47_GL_top_rail;
 	class CUP_arifle_AKM_top_rail;
 	class CUP_arifle_ACRC_blk_556;
@@ -54,6 +55,7 @@ class cfgWeapons
 	class CUP_arifle_FNFAL5060_railed;
 	class CUP_arifle_G36K_KSK_VFG;
 	class CUP_arifle_G3A3_ris_vfg_black;
+	class CUP_srifle_M107_base;
 	class CUP_srifle_M110_black;
 	class CUP_arifle_mk20;
 	class CUP_arifle_mk18_black;
@@ -225,6 +227,19 @@ class cfgWeapons
 		{,
 		};
 	};
+	class MGVE_VG_Fuki: CUP_srifle_M107_base
+    {
+        scope = 2;
+        baseWeapon = "MGVE_VG_Fuki";
+        displayName = "[VET] M107 (Fuki)";
+		hiddenSelectionsTextures[] =
+		{
+			"\MGVE_VeteranEquipment\data\Fuki\fuki_m107_body_co.paa",
+			"\MGVE_VeteranEquipment\data\Fuki\fuki_m107_body_co.paa",
+			"\MGVE_VeteranEquipment\data\Fuki\fuki_m107_cheekibreeki_co.paa",
+			"CUP\Weapons\CUP_Weapons_M107\data\Bipod_co.paa"
+		};
+    };
 	class MGVE_VG_Garrett: CUP_arifle_mk18_black
     {
         scope = 2;
@@ -305,6 +320,19 @@ class cfgWeapons
 			"cup\weapons\cup_weapons_weaponsdata\data\ris_cover\rail_cover_co.paa",
 			"cup\weapons\cup_weapons_weaponsdata\data\magpul_afg_grip\magpul_afg_co.paa",
     	};
+	};
+	class MGVE_VG_Kartex: CUP_arifle_AK15_AFG_black
+	{
+		scope = 2;
+		baseWeapon = "MGVE_VG_Kartex";
+		displayName = "[VET] AK-104 (Kartex)";
+		author = "Texture: Sawtes";
+		hiddenSelectionsTextures[]=
+		{
+			"\MGVE_VeteranEquipment\data\Kartex\kartex_ak12_co.paa",
+			"\MGVE_VeteranEquipment\data\Kartex\kartex_ak12_co.paa",
+			"CUP\Weapons\CUP_Weapons_WeaponsData\Data\Magpul_AFG_grip\magpul_afg_co.paa"
+		};
 	};
 	class MGVE_VG_Luke: CUP_arifle_ACRC_blk_556
 	{
