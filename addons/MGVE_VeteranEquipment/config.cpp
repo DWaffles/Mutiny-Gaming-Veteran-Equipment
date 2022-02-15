@@ -48,6 +48,8 @@ class cfgWeapons
 	/** SMALL ARMS **/
 	//CUP Prototyping
 	class CUP_arifle_AK15_AFG_black;
+	class CUP_arifle_AK15_GP34_Black;
+	class CUP_arifle_ak19_gp34_black;
 	class CUP_arifle_AK47_GL_top_rail;
 	class CUP_arifle_AKM_top_rail;
 	class CUP_arifle_ACRC_blk_556;
@@ -180,6 +182,34 @@ class cfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"\MGVE_VeteranEquipment\data\Ding\ding_p90tr_body.paa"
+		};
+	};
+	class MGVE_VG_Ducklad : CUP_arifle_ak19_gp34_black
+	{
+		scope = 2;
+		baseWeapon = "MGVE_VG_Ducklad";
+		displayName = "[VET] Duck's Rifle (Ducklad)";
+		author = "Texture: Sawtes";
+		hiddenSelectionsTextures[]=
+		{
+			"\MGVE_VeteranEquipment\data\Ducklad\ducklad_ak19_co.paa",
+			"\MGVE_VeteranEquipment\data\Ducklad\ducklad_ak19_co.paa",
+			"CUP\Weapons\CUP_Weapons_AK12\data\GP-34\GP34_black_co.paa"
+		};
+		magazineWell[] = 
+		{
+			"CBA_762x51_G3"
+		};
+	};
+	class MGVE_VG_Eli: CUP_Famas_F1_rail
+	{
+		baseWeapon = "MGVE_VG_Eli";
+		scope=2;
+		displayName="[VET] The LAMAS (Eli)";
+		author = "Texture: Nav";
+		hiddenSelectionsTextures[]=
+		{
+			"\MGVE_VeteranEquipment\data\Eli\eli_famas_co.paa",
 		};
 	};
 	class MGVE_VG_Faz: CUP_arifle_AK47_GL_top_rail
@@ -333,6 +363,18 @@ class cfgWeapons
 			"\MGVE_VeteranEquipment\data\Kartex\kartex_ak12_co.paa",
 			"CUP\Weapons\CUP_Weapons_WeaponsData\Data\Magpul_AFG_grip\magpul_afg_co.paa"
 		};
+	};
+	class MGVE_VG_Lion: CUP_arifle_AK15_GP34_Black
+	{
+	  	baseWeapon = "MGVE_VG_Lion";
+	  	displayName="[VET] GK-57 (Lion)";
+		author = "Texture: Nav";
+	  	hiddenSelectionsTextures[]=
+  		{
+    		"\MGVE_VeteranEquipment\data\Lion\lion_ak15_1_co.paa",
+			"\MGVE_VeteranEquipment\data\Lion\lion_ak15_2_co.paa",
+			"\MGVE_VeteranEquipment\data\Lion\lion_ak15_3_co.paa",
+  		};
 	};
 	class MGVE_VG_Luke: CUP_arifle_ACRC_blk_556
 	{
@@ -761,9 +803,10 @@ class cfgWeapons
 	};
 	class MGVE_VC_Lion_Mask: MGVE_H_aot_mask 
 	{
+		scope = 1;
 		author = "Facel/Nav";
 		displayName = "[VET] Cyberpunk (Lion)";
-		hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\lion\lion_mask_co.paa"};
+		//hiddenSelectionsTextures[] = {"\MGVE_VeteranEquipment\data\lion\lion_mask_co.paa"};
 	};
 	class MGVE_VC_Luke_Mask: MGVE_H_aot_mask 
 	{
