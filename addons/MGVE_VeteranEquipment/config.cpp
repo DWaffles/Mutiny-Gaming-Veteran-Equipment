@@ -47,30 +47,34 @@ class cfgWeapons
 { 
 	/** SMALL ARMS **/
 	//CUP Prototyping
+	class CUP_arifle_ACRC_blk_556;
 	class CUP_arifle_AK15_AFG_black;
 	class CUP_arifle_AK15_GP34_Black;
 	class CUP_arifle_ak19_gp34_black;
 	class CUP_arifle_AK47_GL_top_rail;
 	class CUP_arifle_AKM_top_rail;
-	class CUP_arifle_ACRC_blk_556;
 	class CUP_arifle_Colt727;
 	class CUP_arifle_FNFAL5060_railed;
 	class CUP_arifle_G36K_KSK_VFG;
 	class CUP_arifle_G3A3_ris_vfg_black;
-	class CUP_srifle_M107_base;
-	class CUP_srifle_M110_black;
 	class CUP_arifle_mk20;
 	class CUP_arifle_mk18_black;
 	class CUP_arifle_M16A1;
 	class CUP_arifle_M4A1_black;
+	class CUP_arifle_M4A1_MOE_black;
 	class CUP_arifle_Mk16_STD_black;
 	class CUP_arifle_Mk17_CQC_FG_black; //around line 2506 of scar config in CUP_Weapons
 	class CUP_arifle_Mk17_STD_FG_black; //around line 2500 of scar config in CUP_Weapons
 	class CUP_arifle_RPK74;
-	class CUP_lmg_Pecheneg_top_rail_B50_vfg;
-	class CUP_lmg_M60;
+	class CUP_arifle_SBR_od;
 	class CUP_Famas_F1_rail;
 	class CUP_glaunch_6G30;
+	class CUP_lmg_Pecheneg_top_rail_B50_vfg;
+	class CUP_lmg_m249_pip2;
+	class CUP_lmg_M60;
+	class CUP_srifle_M107_base;
+	class CUP_srifle_M110_black;
+
 	//class CUP_hgun_Glock17;
 	
 	//RHSUSAF
@@ -212,6 +216,18 @@ class cfgWeapons
 			"\MGVE_VeteranEquipment\data\Eli\eli_famas_co.paa",
 		};
 	};
+	class MGVE_VG_Enzee: CUP_arifle_M4A1_MOE_black
+	{
+		baseWeapon = "MGVE_VG_Enzee";
+		scope=2;
+		displayName="[VET] November Zulu (Enzee)";
+		author = "Texture: Nav";
+		hiddenSelectionsTextures[]=
+		{
+			"\MGVE_VeteranEquipment\data\Enzee\enzee_m4a1_1_co.paa",
+			"\MGVE_VeteranEquipment\data\Enzee\enzee_m4a1_2_co.paa"
+		};
+	};
 	class MGVE_VG_Faz: CUP_arifle_AK47_GL_top_rail
 	{
 		scope = 2;
@@ -268,6 +284,19 @@ class cfgWeapons
 			"\MGVE_VeteranEquipment\data\Fuki\fuki_m107_body_co.paa",
 			"\MGVE_VeteranEquipment\data\Fuki\fuki_m107_cheekibreeki_co.paa",
 			"CUP\Weapons\CUP_Weapons_M107\data\Bipod_co.paa"
+		};
+    };
+	class MGVE_VG_Gamler: CUP_arifle_SBR_od
+    {
+        scope = 2;
+        baseWeapon = "MGVE_VG_Gamler";
+        displayName = "[VET] Redpilled (Gamler)";
+		author = "Texture: Nav";
+		hiddenSelectionsTextures[] =
+		{
+			"\MGVE_VeteranEquipment\data\Gamler\gamler_m4_1_co.paa",
+			"\MGVE_VeteranEquipment\data\Gamler\gamler_m4_2_co.paa",
+			"\MGVE_VeteranEquipment\data\Gamler\gamler_m4_3_co.paa"
 		};
     };
 	class MGVE_VG_Garrett: CUP_arifle_mk18_black
@@ -515,6 +544,27 @@ class cfgWeapons
             CBA_556x45_STANAG_2D_XL
         };
     };
+	class MGVE_VG_Seath: CUP_lmg_m249_pip2
+    {
+		scope = 2;
+        baseWeapon = "MGVE_VG_Seath";
+        displayName="[VET] Warhawk (Seath)";
+		author = "Texture: Nav";
+		hiddenSelectionsTextures[] = 
+		{
+			"\MGVE_VeteranEquipment\Data\Seath\seath_m249_receiver_co.paa", // reciever // changed
+			"cup\weapons\cup_weapons_mk48\data\painted\assemblycover_wood_co.paa",
+			"\MGVE_VeteranEquipment\Data\Seath\seath_m249_barrel_co.paa", // barrel // changed
+			"\MGVE_VeteranEquipment\Data\Seath\seath_m249_misc_co.paa", // misc // changed
+			"\MGVE_VeteranEquipment\Data\Seath\seath_m249_fore_co.paa", // fore //changed
+			"\MGVE_VeteranEquipment\Data\Seath\seath_m249_stockmap_co.paa", // Stockmap //changed
+			"cup\weapons\cup_weapons_mk48\data\painted\rearsight_wood_co.paa",
+			"cup\weapons\cup_weapons_mk48\data\pouch_auscam_co.paa",
+			"cup\weapons\cup_weapons_weaponsdata\data\kac_vfg\kac_vfg_od_co.paa",
+			"cup\weapons\cup_weapons_mk48\data\painted\mk48_quadrail_wood_co.paa",
+			"cup\weapons\cup_weapons_mk48\data\painted\pipbipod_wood_co.paa"
+		};
+    };
 	class MGVE_VG_Snake: CUP_arifle_M16A1
 	{
 		scope = 2;
@@ -648,14 +698,14 @@ class cfgWeapons
 	class MGVE_VL_Jager: launch_MRAWS_green_f
 	{
 		baseWeapon = "MGVE_VL_Jager";
-		scope=2;
+		scope = 2;
 		displayName="[VET] Jägerfaust";
 		hiddenSelections[] = {"camo1", "camo2"};
-		hiddenSelectionsTextures[]=
+		/*hiddenSelectionsTextures[]=
 		{
 			"\MGVE_VeteranEquipment\data\Jager\jager_maaws_mod1_1_co.paa",
 			"\MGVE_VeteranEquipment\data\Jager\jager_maaws_mod1_2_co.paa"
-		};
+		};*/
 	};
 	class MGVE_VL_Khaled: launch_MRAWS_green_rail_f
 	{
