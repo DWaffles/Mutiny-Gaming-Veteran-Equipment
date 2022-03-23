@@ -57,6 +57,7 @@ class cfgWeapons
 	class CUP_arifle_FNFAL5060_railed;
 	class CUP_arifle_G36K_KSK_VFG;
 	class CUP_arifle_G3A3_ris_vfg_black;
+	class CUP_arifle_L85A2_GL;
 	class CUP_arifle_mk20;
 	class CUP_arifle_mk18_black;
 	class CUP_arifle_M16A1;
@@ -515,33 +516,25 @@ class cfgWeapons
             "CUP\Weapons\CUP_Weapons_PK\data\b50_co.paa"
         };
     };
-	class MGVE_VG_Sbeve: CUP_arifle_FNFAL5060_railed
+	class MGVE_VG_Sbeve: CUP_arifle_L85A2_GL
     {
 		scope=2;
         baseWeapon = "MGVE_VG_Sbeve";
-        displayName="[VET] The Appointment (Dr. Sbeve / FN Fal)";
+        displayName="[VET] The Medicine Stick (Dr. Sbeve)";
         author = "Texture: Christian";
-        hiddenSelectionsTextures[]=
+		hiddenSelections[]=
         {
-            "MGVE_VeteranEquipment\data\Sbeve\sbeve_fnfal_body_co.paa",
-            "MGVE_VeteranEquipment\data\Sbeve\sbeve_fnfal_stock_co.paa",
+            "camo1",
+            "camo2",
+            "camo3",
+            "camo4",
         };
-    };
-	class MGVE_VG_Sbeve_G36: CUP_arifle_G36K_KSK_VFG
-    {
-		scope = 1;
-        baseWeapon = "MGVE_VG_Sbeve_G36";
-        displayName="[VET] The Doctor's Assistant (Sbeve)";
-		author = "Texture: Sbeve";
-		magazineWell[]=
-        {,
-            STANAG_556x45,
-            STANAG_556x45_Large,
-            CBA_556x45_STANAG,
-            CBA_556x45_STANAG_L,
-            CBA_556x45_STANAG_XL,
-            CBA_556x45_STANAG_2D,
-            CBA_556x45_STANAG_2D_XL
+		hiddenSelectionsTextures[]=
+        {
+            "MGVE_VeteranEquipment\data\Sbeve\sbeve_main_co.paa",
+            "MGVE_VeteranEquipment\data\Sbeve\sbeve_ris_co.paa",
+            "MGVE_VeteranEquipment\data\Sbeve\sbeve_front_co.paa",
+            "MGVE_VeteranEquipment\data\Sbeve\sbeve_ugl_co.paa",
         };
     };
 	class MGVE_VG_Seath: CUP_lmg_m249_pip2
@@ -692,8 +685,6 @@ class cfgWeapons
 	/** LAUNCHERS **/
 	class launch_MRAWS_green_f;
 	class launch_MRAWS_green_rail_f;
-
-	
 
 	class MGVE_VL_Jager: launch_MRAWS_green_f
 	{
